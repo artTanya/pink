@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Артамонова](https://up.htmlacademy.ru/adaptive/19/user/893699).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгения Фомина](https://htmlacademy.ru/profile/iliana).
 
 ---
 
