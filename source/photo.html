@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="#">Главная</a></li>
+            <li class="site-list__item"><a href="#">Фотографии</a></li>
+            <li class="site-list__item"><a href="#">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="photos">
+        <h2 class="photos__title">Фотографии пользователей</h2>
+        <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photos__list">
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Анны">
+            </p>
+            <cite class="photos__author-name">Анна</cite>
+            <time class="photos__timeago" >5 минут назад</time>
+            <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:215</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Левона">
+            </p>
+            <cite class="photos__author-name">Левон</cite>
+            <time class="photos__timeago" >5 часов назад</time>
+            <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:356</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Антона">
+            </p>
+            <cite class="photos__author-name">Антон</cite>
+            <time class="photos__timeago" >12 часов назад</time>
+            <p class="photos__text">Соседи будут рады!</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:666</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Бориса">
+            </p>
+            <cite class="photos__author-name">Борис</cite>
+            <time class="photos__timeago" >20 часов назад</time>
+            <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:215</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Сергея">
+            </p>
+            <cite class="photos__author-name">Сергей</cite>
+            <time class="photos__timeago" >25 часов назад</time>
+            <p class="photos__text">Самая кубанская в мире</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:4</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Максима">
+            </p>
+            <cite class="photos__author-name">Максим</cite>
+            <time class="photos__timeago" >40 часов назад</time>
+            <p class="photos__text">Где снег-то?</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:150</span>
+          </blockquote>
+
+          <blockquote class="photos__item">
+            <p class="photos__author-picture">
+              <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Фото Надежды">
+            </p>
+            <cite class="photos__author-name">Надежда</cite>
+            <time class="photos__timeago" >45 часов назад</time>
+            <p class="photos__text">Всем GM и взаимные лайки!</p>
+            <button class="photos__like-button" type="button" name="button">Нравится</button>
+            <span class="photos__count">Нравится:2560</span>
+          </blockquote>
+
+
+        </div>
+        <p class="photos__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+      </section>
+
+      <section class="tools">
+        <img class="tools__image" src="https://via.placeholder.com/150x150" alt="Фото">
+        <ul class="tools-list">
+          <li class="tools__item tools__item-crop"><span class="visually-hidden">Корректировка</span></li>
+          <li class="tools__item tools__item-fill"><span class="visually-hidden">Заливка</span></li>
+          <li class="tools__item tools__item-intesity"><span class="visually-hidden">Контраст</span></li>
+        </ul>
+        <form class="tools__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="range" name="" value="">
+        </form>
+        <div class="tools__buttons">
+          <button class=" tools__button" type="submit" name="button">Запостить</button>
+          <button class="tools_button" type="button" name="button">Отмена</button>
+        </div>
+  </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <img class="main-footer__image" src="https://via.placeholder.com/150x150" alt="Очки">
+        <a class="main-footer__logo" href="#"><img class="main-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Инстаграмме</span></a></li>
+          <li class="social__item"><a class="social__link social__link--utube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a></li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+
+    </footer>
