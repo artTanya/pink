@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="#">Главная</a></li>
+            <li class="site-list__item"><a href="#">Фотографии</a></li>
+            <li class="site-list__item"><a href="#">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <section class="intro-text">
+        <h2 class="intro-text__title">Конкурс на самое бесбашенное путешествие с Пинк</h2>
+        <p class="intro-text__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      </section>
+
+      <form class="author-form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <fieldset class="author-form__item">
+          <label class="author-form__label author-form__label--req" for 'surname'>Фамилия:</label>
+          <input class="author-form__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
+
+          <label  class="author-form__label author-form__label--req" for="name">Имя:</label>
+          <input class="author-form__input" type="text" name="name" id="name"  required placeholder="Введите ваше имя *">
+
+          <label class="author-form__label" for="thirdname">Отчество:</label>
+          <input  class="author-form__input" type="text" name="thirdname" id="thirdname"  placeholder="Ну и отчество тоже">
+          </fieldset>
+
+        <fieldset class="author-form__item">
+          <h3 class="author-form__title">Ваши безбашенные достижения в путешествии</h3>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1" checked>
+          <label class="author-form__checkbox" for="checkbox-1">Сделал селфи с акулой</label>
+
+          <input type="checkbox" name="checkbox-2" id="checkbox-2" checked>
+          <label class="author-form__checkbox"for="checkbox-2">Обгорел на пляже</label>
+
+          <input type="checkbox" name="checkbox-3" id="checkbox-3">
+          <label  class="author-form__checkbox"for="checkbox-3">Видел Чака Нориса</label>
+
+          <input type="checkbox" name="checkbox-4" id="checkbox-4">
+          <label  class="author-form__checkbox"for="checkbox-4">Накупил сувениров</label>
+
+          <input type="checkbox" name="checkbox-5" id="checkbox-5" checked>
+          <label class="author-form__checkbox" for="checkbox-5">Удержал башню</label>
+
+          <input type="checkbox" name="checkbox-6" id="checkbox-6" >
+          <label class="author-form__checkbox"for="checkbox-6">Разгромил отель</label>
+        </fieldset>
+
+        <fieldset class="author-form__item">
+          <label class="author-form__label"for="telephone">Номер телефона</label>
+          <input class="author-form__input" type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста">
+
+          <label class="author-form__label author-form__label--req" for="email">Адрес почты</label>
+          <input class="author-form__input"type="email" name="email" id="email" required placeholder="Введите почту *">
+        </fieldset>
+
+        <fieldset class="author-form__item">
+          <h3>С каким приложением путешествовали?</h3>
+          <input type="radio" name="radio-1" id="radio-1" checked>
+          <label for="radio-1">Pink для iOS</label>
+
+          <input type="radio" name="radio-2" id="radio-2" >
+          <label for="radio-2">Pink на Android</label>
+
+          <input type="radio" name="radio-3" id="radio-3" >
+          <label for="radio-3">Windows Phone</label>
+        </fieldset>
+
+        <fieldset class="author-form__item">
+          <h3>Опишите свои эмоции</h3>
+          <textarea id="emotions" name="emotions" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <div class="author-form__btn">
+          <button class="author-form__button" type="submit">Отправить форму</button>
+        </div>
+
+        <p class="author-form__text">* — обязательные поля</p>
+
+
+      </form>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <img class="main-footer__image" src="https://via.placeholder.com/150x150" alt="Очки">
+        <a class="main-footer__logo" href="#"><img class="main-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Инстаграмме</span></a></li>
+          <li class="social__item"><a class="social__link social__link--utube" href="#"><span class="visually-hidden">Мы на Ютубе</span></a></li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+
+    </footer>
