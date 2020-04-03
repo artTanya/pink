@@ -1,0 +1,41 @@
+.photos {
+  &__block {
+    background-color: #f2f2f2;
+  }
+
+  &__title {
+    color: red;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__text {
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__author-name {
+    font-style: normal;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__timeago {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__count {
+    color: #d22856;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
