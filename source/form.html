@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+      <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg"  width="74.426px" height="22.859px" alt="Логотип Пинк"></a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -22,37 +23,37 @@
     </header>
     <main>
 
-      <section class="intro-text">
-        <h2 class="intro-text__title">Конкурс на самое бесбашенное путешествие с Пинк</h2>
-        <p class="intro-text__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <section class="intro">
+        <h2 class="intro__title">Конкурс на самое бесбашенное путешествие с Пинк</h2>
+        <p class="intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
 
       <form class="author-form" action="https://echo.htmlacademy.ru/" method="post">
 
         <fieldset class="author-form__item">
-          <label class="author-form__label author-form__label--req" for "surname">Фамилия:</label>
-          <input class="author-form__input" type="text" name="text" id="surname" required placeholder="Укажите фамилию *">
+          <label class="author-form__label" for="surname">Фамилия:</label>
+          <input class="author-form__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
 
-          <label  class="author-form__label author-form__label--req" for="name">Имя:</label>
-          <input class="author-form__input" type="text" name="text" id="name"  required placeholder="Введите ваше имя *">
+          <label  class="author-form__label" for="name">Имя:</label>
+          <input class="author-form__input" type="text" name="name" id="name"  required placeholder="Введите ваше имя *">
 
           <label class="author-form__label" for="thirdname">Отчество:</label>
-          <input  class="author-form__input" type="text" name="text" id="thirdname"  placeholder="Ну и отчество тоже">
+          <input  class="author-form__input" type="thirdname" name="text" id="thirdname"  placeholder="Ну и отчество тоже">
           </fieldset>
 
-        <fieldset class="author-form__item">
+        <fieldset class="author-form__item author-form__item--grey">
           <h3 class="author-form__title">Ваши безбашенные достижения в путешествии</h3>
           <input type="checkbox" name="checkbox" id="checkbox-1" checked>
           <label class="author-form__checkbox" for="checkbox-1">Сделал селфи с акулой</label>
 
           <input type="checkbox" name="checkbox" id="checkbox-2" checked>
-          <label class="author-form__checkbox"for="checkbox-2">Обгорел на пляже</label>
+          <label class="author-form__checkbox" for="checkbox-2">Обгорел на пляже</label>
 
           <input type="checkbox" name="checkbox" id="checkbox-3">
           <label  class="author-form__checkbox"for="checkbox-3">Видел Чака Нориса</label>
 
           <input type="checkbox" name="checkbox" id="checkbox-4">
-          <label  class="author-form__checkbox"for="checkbox-4">Накупил сувениров</label>
+          <label  class="author-form__checkbox" for="checkbox-4">Накупил сувениров</label>
 
           <input type="checkbox" name="checkbox" id="checkbox-5" checked>
           <label class="author-form__checkbox" for="checkbox-5">Удержал башню</label>
@@ -65,11 +66,11 @@
           <label class="author-form__label" for="telephone">Номер телефона</label>
           <input class="author-form__input" type="tel" name="tel" id="telephone" placeholder="Номер, пожалуйста">
 
-          <label class="author-form__label author-form__label--req" for="email">Адрес почты</label>
-          <input class="author-form__input"type="email" name="email" id="email" required placeholder="Введите почту *">
+          <label class="author-form__label" for="email">Адрес почты</label>
+          <input class="author-form__input" type="email" name="email" id="email" required placeholder="Введите почту *">
         </fieldset>
 
-        <fieldset class="author-form__item">
+        <fieldset class="author-form__item author-form__item--grey">
           <h3 class="author-form__title">С каким приложением путешествовали?</h3>
           <input type="radio" name="radio" id="radio-1" checked>
           <label class="author-form__radio" for="radio-1">Pink для iOS</label>
@@ -90,7 +91,7 @@
           <button class="author-form__button" type="submit">Отправить форму</button>
         </div>
 
-        <p class="author-form__text">* — обязательные поля</p>
+        <p class="author-form__text"><span class="author-form__star">*</span> — обязательные поля</p>
 
 
       </form>
@@ -98,8 +99,7 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <img class="main-footer__image" src="https://via.placeholder.com/150x150" alt="Очки">
-        <a class="main-footer__logo" href="#"><img class="main-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк"></a>
+        <a class="main-footer__logo" href="#"><img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg"  width="146.3px" height="40.375px" alt="Логотип Пинк"></a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">

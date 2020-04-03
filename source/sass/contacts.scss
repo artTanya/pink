@@ -1,0 +1,21 @@
+.contacts {
+  background-color: #ffffff;
+
+  &__title {
+    color: #283645;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__text {
+    color: #283645;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__value {
+    color: #d22856;
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
