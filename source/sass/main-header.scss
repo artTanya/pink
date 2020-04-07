@@ -2,3 +2,12 @@
 .main-header {
   background-color: #1d2632;
 }
+
+.main-header__content-wrapper {
+  @include content-wrapper;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

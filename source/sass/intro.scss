@@ -1,11 +1,11 @@
 .intro {
-  width: 320px;
-  height: 462px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  &__title {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-  }
+.intro__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
 }

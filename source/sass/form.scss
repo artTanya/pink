@@ -3,6 +3,7 @@
   &__radio,
   &__textarea,
   &__input {
+    display: block;
     color: #283645;
     font-size: 18px;
     font-weight: 400;
@@ -41,4 +42,76 @@
     line-height: 30px;
     text-transform: uppercase;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .author-form__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .author-form__item--wide {
+    width: auto;
+  }
+
+  .author-form__btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .author-form__applications {
+    order: -3;
+  }
+
+  .author-form__contacts {
+    order: -2;
+  }
+
+  .author-form__achievments {
+    order: -1;
+  }
+
+  .author-form__name {
+    order: -4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-form__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .author-form__item--wide {
+    flex-basis: 940px;
+  }
+
+  .author-form__btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .author-form__applications {
+    order: -3;
+  }
+
+  .author-form__contacts {
+    order: -2;
+  }
+
+  .author-form__achievments {
+    order: -1;
+  }
+
+  .author-form__name {
+    order: -4;
+  }
+}
+
+.author-form__content-wrapper {
+  @include content-wrapper;
 }

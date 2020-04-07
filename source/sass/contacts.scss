@@ -5,17 +5,35 @@
     color: #283645;
     font-size: 24px;
     font-weight: 300;
+    text-align: center;
   }
 
   &__text {
     color: #283645;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
   }
 
   &__value {
     color: #d22856;
     font-size: 24px;
     font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media (min-width: 660px) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
   }
 }
