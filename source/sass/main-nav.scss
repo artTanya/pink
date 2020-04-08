@@ -2,11 +2,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  &__link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-  }
+.site-list__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
 }

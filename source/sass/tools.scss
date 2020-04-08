@@ -1,21 +1,21 @@
 .tools {
   background-color: #f2f2f2;
+}
 
-  &__list {
-    list-style: none;
-  }
+.tools__list {
+  list-style: none;
+}
 
-  &__button {
-    color: #d22856;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-  }
+.tools__button {
+  color: #d22856;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
 
-  &__button--grey {
-    opacity: 0.1;
-    color: #283645;
-  }
+.tools__button--grey {
+  opacity: 0.1;
+  color: #283645;
 }
 
 .tools__content-wrapper {

@@ -1,47 +1,45 @@
-.author-form {
-  &__checkbox,
-  &__radio,
-  &__textarea,
-  &__input {
-    display: block;
-    color: #283645;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-  }
+.author-form__checkbox,
+.author-form__radio,
+.author-form__textarea,
+.author-form__input {
+  display: block;
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
 
-  &__label,
-  &__title {
-    color: #d22856;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.author-form__label,
+.author-form__title {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  &__text {
-    color: #283645;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.author-form__text {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  &__star {
-    color: #d22856;
-  }
+.author-form__star {
+  color: #d22856;
+}
 
-  &__item--grey {
-    background-color: #f2f2f2;
-  }
+.author-form__item--grey {
+  background-color: #f2f2f2;
+}
 
-  &__button {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.author-form__button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {

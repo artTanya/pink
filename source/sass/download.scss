@@ -1,28 +1,28 @@
 
 .download {
   background-color: #1d2631;
+}
 
-  &__button {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    color: #ffffff;
-    text-decoration: none;
-  }
+.download__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
 
-  &__list {
-    list-style: none;
-  }
+.download__list {
+  list-style: none;
+}
 
-  &__link {
-    color: #ffffff;
-    text-decoration: none;
-  }
+.download__link {
+  color: #ffffff;
+  text-decoration: none;
+}
 
-  &__description {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-  }
+.download__description {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
 }
