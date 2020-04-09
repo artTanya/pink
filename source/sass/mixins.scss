@@ -1,6 +1,12 @@
 @mixin content-wrapper {
+  outline: 2px solid red;
+  width: 320px;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 940px;
