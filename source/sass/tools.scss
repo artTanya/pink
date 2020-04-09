@@ -23,7 +23,7 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $desktop-width) {
   .tools__content-wrapper {
     display: flex;
   }

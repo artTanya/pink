@@ -18,7 +18,7 @@
   line-height: 18px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .main-footer__content-wrapper {
     display: flex;
     justify-content: space-between;

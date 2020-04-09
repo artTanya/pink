@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
 }
 
-.photos__text {
+.photos__text-content {
   color: #283645;
   font-size: 14px;
   font-weight: 400;
@@ -46,7 +46,7 @@
   @include content-wrapper;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .photos__list {
     display: flex;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .photos__list {
     display: flex;
     flex-wrap: wrap;
