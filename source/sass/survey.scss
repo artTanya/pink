@@ -18,3 +18,9 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .survey__content-wrapper {
+    display: flex;
+  }
+}

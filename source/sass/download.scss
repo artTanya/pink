@@ -26,3 +26,9 @@
   font-weight: 300;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-color: transparent;
+  }
+}

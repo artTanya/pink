@@ -10,3 +10,15 @@
   color: #ffffff;
   font-size: 18px;
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

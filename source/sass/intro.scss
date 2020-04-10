@@ -3,13 +3,23 @@
 }
 
 .intro {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .intro__title {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-title {
+    background-image: none;
+  }
+
+  .intro {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+  }
 }
