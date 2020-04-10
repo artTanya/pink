@@ -12,3 +12,9 @@
 .survey__content-wrapper {
   @include content-wrapper;
 }
+
+@media (max-width: $max-mobile-width) {
+  .survey {
+    display: none;
+  }
+}

@@ -1,3 +1,7 @@
+.intro__content-wrapper {
+  @include content-wrapper;
+}
+
 .intro {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;

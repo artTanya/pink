@@ -1,3 +1,7 @@
+.feedbacks__content-wrapper {
+  @include content-wrapper;
+}
+
 .feedbacks {
   background-color: #ffffff;
   text-align: center;
@@ -16,4 +20,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.hide-on-mobile {
+  visibility: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .hide-on-mobile {
+    visibility: visible;
+  }
 }

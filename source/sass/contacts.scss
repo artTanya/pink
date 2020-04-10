@@ -1,3 +1,7 @@
+.contacts__content-wrapper {
+  @include content-wrapper;
+}
+
 .contacts {
   background-color: #ffffff;
 }

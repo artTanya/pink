@@ -57,10 +57,6 @@
     flex-basis: 300px;
     outline: 2px solid red;
   }
-
-  .photos__item--wide {
-    flex-basis: 660px;
-  }
 }
 
 @media (min-width: $desktop-width) {
