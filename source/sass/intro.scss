@@ -3,11 +3,13 @@
 }
 
 .intro {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.intro__title {
+.intro__top {
+  min-height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   color: #ffffff;
   font-size: 24px;
@@ -15,11 +17,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro-title {
+  .intro-top {
+    min-height: 266px;
     background-image: none;
-  }
-
-  .intro {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
   }
 }
