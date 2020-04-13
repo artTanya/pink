@@ -10,8 +10,10 @@
 
 .intro__top {
   min-height: 396px;
-  background-image: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center 0;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
@@ -20,19 +22,12 @@
 @media (min-width: $tablet-width) {
   .intro-top {
     min-height: 266px;
-    background-image: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .intro__top {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro__top {
-    background-image: url("../img/bg-back-desktop@1x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
