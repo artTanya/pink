@@ -11,8 +11,8 @@
       <div class="main-header__desktop-wrap">
         <div class="main-header__content-wrapper">
           <div class="main-header-top">
-            <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк"></a>
-            <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+            <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип Пинк"></a>
+            <button class="main-header-top__toggle" type="button" name="button">Открыть меню</button>
           </div>
         </div>
           <nav class="main-header__nav main-nav">
@@ -33,9 +33,10 @@
       </section>
 
       <section class="photos">
-          <div class="photos__content-wrapper">
-            <p class="photos__text-content">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          </div>
+        <h2 class="visually-hidden">Фотографии</h2>
+        <div class="photos__content-wrapper">
+          <p class="photos__text-content">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
         <div class="photos__preview">
           <div class="photos__item photos__item--wide">
             <div class="photos__author-picture">
@@ -44,11 +45,12 @@
 
             <div class="photos__block">
               <div class="photos__content-wrapper">
-                <cite class="photos__author-name">Анна</cite>
-                <span class="photos__timeago" >(5 минут назад)</span>
-                <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <button class="photos__like-button" type="button" name="button">Нравится</button>
-                <span class="photos__count">Нравится:215</span>
+                <div class="photos__content">
+                  <cite class="photos__author-name">Анна</cite>
+                  <span class="photos__timeago" >(5 минут назад)</span>
+                  <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <button class="photos__like-button photos__like-button--top" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">215</span></button>
+                </div>
               </div>
             </div>
           </div>
@@ -62,8 +64,7 @@
               <cite class="photos__author-name">Левон</cite>
               <span class="photos__timeago" >(5 часов назад)</span>
               <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:356</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">356</span></button>
             </div>
           </div>
 
@@ -75,8 +76,7 @@
               <cite class="photos__author-name">Антон</cite>
               <span class="photos__timeago" >(12 часов назад)</span>
               <p class="photos__text">Соседи будут рады!</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:666</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">666</span></button>
             </div>
           </div>
 
@@ -88,8 +88,7 @@
               <cite class="photos__author-name">Борис</cite>
               <span class="photos__timeago" >(20 часов назад)</span>
               <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:215</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">215</span></button>
             </div>
           </div>
 
@@ -101,8 +100,7 @@
               <cite class="photos__author-name">Сергей</cite>
               <span class="photos__timeago" >(25 часов назад)</span>
               <p class="photos__text">Самая кубанская в мире</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:4</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">4</span></button>
             </div>
           </div>
 
@@ -114,8 +112,7 @@
               <cite class="photos__author-name">Максим</cite>
               <span class="photos__timeago" >(40 часов назад)</span>
               <p class="photos__text">Где снег-то?</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:150</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">150</span></button>
             </div>
           </div>
 
@@ -127,8 +124,7 @@
               <cite class="photos__author-name">Надежда</cite>
               <span class="photos__timeago" >(45 часов назад)</span>
               <p class="photos__text">Всем GM и взаимные лайки!</p>
-              <button class="photos__like-button" type="button" name="button">Нравится</button>
-              <span class="photos__count">Нравится:2560</span>
+              <button class="photos__like-button" type="button" name="button"><span class="photos__like-text">Нравится:</span><span class="photos__count">2560</span></button>
             </div>
           </div>
         </div>
@@ -139,25 +135,26 @@
       </section>
 
       <section class="tools">
-        <div class="tools__content-wrapper">
-          <div class="tools__image">
-            <a href="#"><img src="img/photo-road-mobile@1x.jpg" width="280" height="384" alt="Фото для обработки"></a>
-          </div>
-          <div class="tools_block">
-            <ul class="tools__list">
-              <li class="tools__item tools__item--crop"><span class="visually-hidden">Корректировка</span></li>
-              <li class="tools__item tools__item--fill"><span class="visually-hidden">Заливка</span></li>
-              <li class="tools__item tools__item--intesity"><span class="visually-hidden">Контраст</span></li>
-            </ul>
-            <form class="tools__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="range" name="range" min="0" max="100" step="1" value="50">
-            </form>
+        <h2 class="visually-hidden">Загрузка фотографии и ее обработка</h2>
+        <form class="tools__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="tools__content-wrapper">
+            <div class="tools__image">
+              <img src="img/photo-road-mobile@1x.jpg" width="280" height="384" alt="Фото для обработки">
+            </div>
+            <div class="tools_block">
+              <ul class="tools__list">
+                <li class="tools__item tools__item--crop"><span class="visually-hidden">Корректировка</span></li>
+                <li class="tools__item tools__item--fill"><span class="visually-hidden">Заливка</span></li>
+                <li class="tools__item tools__item--intesity"><span class="visually-hidden">Контраст</span></li>
+              </ul>
+            <input type="range" name="range" min="0" max="100" step="1" value="50">
             <div class="tools__buttons">
-              <button class=" tools__button" type="submit" name="button">Запостить</button>
-              <button class="tools__button tools__button--grey" type="button" name="button">Отмена</button>
+                <button class=" tools__button" type="submit" name="button">Запостить</button>
+                <button class="tools__button tools__button--grey" type="button" name="button">Отмена</button>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
 
       </section>
       </main>

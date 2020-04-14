@@ -1,4 +1,6 @@
 .feedbacks__content-wrapper {
+  position: relative;
+
   @include content-wrapper;
 }
 
@@ -13,6 +15,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
 }
 
 .feedbacks__text {
@@ -23,11 +26,24 @@
 }
 
 .hide-on-mobile {
-  visibility: hidden;
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .hide-on-mobile {
-    visibility: visible;
+    display: block;
+  }
+
+  .feedbacks__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedbacks__author-name {
+    order: 1;
+  }
+
+  .feedbacks__text.hide-on-mobile {
+    order: 2;
   }
 }

@@ -38,9 +38,3 @@
     justify-content: space-between;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-}
