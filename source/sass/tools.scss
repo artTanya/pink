@@ -19,18 +19,17 @@
 }
 
 .tools__content-wrapper {
-  @include content-wrapper;
   background-color: #f2f2f2;
-}
 
-@media (min-width: $desktop-width) {
-  .tools__content-wrapper {
-    display: flex;
-  }
+  @include content-wrapper;
 }
 
 @media (min-width: $desktop-width) {
   .tools {
     background-color: transparent;
+  }
+
+  .tools__content-wrapper {
+    display: flex;
   }
 }

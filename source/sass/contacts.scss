@@ -1,9 +1,9 @@
-.contacts__content-wrapper {
-  @include content-wrapper;
-}
-
 .contacts {
   background-color: #ffffff;
+}
+
+.contacts__content-wrapper {
+  @include content-wrapper;
 }
 
 .contacts__title {
@@ -32,12 +32,5 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__list {
-    display: flex;
-    justify-content: space-around;
   }
 }

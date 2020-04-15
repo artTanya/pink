@@ -25,15 +25,11 @@
   line-height: 30px;
 }
 
-.hide-on-mobile {
+.feedbacks__description {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .hide-on-mobile {
-    display: block;
-  }
-
   .feedbacks__item {
     display: flex;
     flex-direction: column;
@@ -43,7 +39,8 @@
     order: 1;
   }
 
-  .feedbacks__text.hide-on-mobile {
+  .feedbacks__description {
+    display: block;
     order: 2;
   }
 }

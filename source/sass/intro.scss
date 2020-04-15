@@ -12,6 +12,12 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
+  line-height: auto;
+}
+
+.intro__download {
+  background-color: #1d2631;
 }
 
 .intro__top {
@@ -26,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .intro-top {
+  .intro__top {
     min-height: 266px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }

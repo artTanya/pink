@@ -1,6 +1,5 @@
-
-.intro__download {
-  background-color: #1d2631;
+.download__list {
+  list-style: none;
 }
 
 .download__button {
@@ -9,10 +8,6 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-}
-
-.download__list {
-  list-style: none;
 }
 
 .download__link {

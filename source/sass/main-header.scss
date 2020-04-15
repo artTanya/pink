@@ -1,13 +1,16 @@
-
 .main-header {
   background-color: #1d2632;
 }
 
-.main-header-top {
+.main-header__top {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+}
+
+.main-header__nav {
+  border-top: 1px solid #000000;
 }
 
 .main-header__content-wrapper {
@@ -32,8 +35,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    .main-header-top__toggle {
+    .main-header__toggle {
       display: none;
+    }
+
+    .main-header__nav {
+      border-top: 0;
     }
   }
 }
