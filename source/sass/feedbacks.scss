@@ -1,12 +1,12 @@
+.feedbacks {
+  background-color: #ffffff;
+  text-align: center;
+}
+
 .feedbacks__content-wrapper {
   position: relative;
 
   @include content-wrapper;
-}
-
-.feedbacks {
-  background-color: #ffffff;
-  text-align: center;
 }
 
 .feedbacks__author-name {

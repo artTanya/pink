@@ -42,6 +42,10 @@
   text-transform: uppercase;
 }
 
+.author-form__content-wrapper {
+  @include content-wrapper;
+}
+
 @media (min-width: $tablet-width) {
   .author-form__content-wrapper {
     display: flex;
