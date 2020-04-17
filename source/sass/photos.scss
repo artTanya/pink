@@ -1,41 +1,99 @@
-.photos {
-  &__block {
-    background-color: #f2f2f2;
+.photos__block {
+  background-color: #f2f2f2;
+}
+
+
+.photos__text-content {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.photos__author-name {
+  font-style: normal;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.photos__timeago {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos__count,
+.photos__like-text {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+
+.photos__item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.photos__item--wide .photos__block {
+  background-color: transparent;
+}
+
+.photos__content {
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.photos__list {
+  @include content-wrapper;
+}
+
+.photos__content-wrapper {
+  @include content-wrapper;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__title {
-    color: red;
-    font-size: 24px;
-    font-weight: 300;
+  .photos__item {
+    flex-basis: 300px;
+    outline: 2px solid red;
+    margin-right: 20px;
   }
 
-  &__text {
-    color: #283645;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
+  .photos__item:nth-child(2n) {
+    margin-right: 0;
   }
 
-  &__author-name {
-    font-style: normal;
-    color: #283645;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
+  .photos__like-button--top {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__item {
+    margin-right: 20px;
   }
 
-  &__timeago {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 24px;
-    text-transform: uppercase;
+  .photos__item:nth-child(2n) {
+    margin-right: 20px;
   }
 
-  &__count {
-    color: #d22856;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
+  .photos__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .photos__item--wide {
+    flex-basis: auto;
   }
 }

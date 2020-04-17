@@ -1,7 +1,11 @@
+.price__content-wrapper {
+  @include content-wrapper;
+}
+
 .price {
   background-color: #f2f2f2;
 
-  &__title {
+  .price__title {
     background-color: #283645;
     color: #ffffff;
     font-size: 18px;
@@ -10,8 +14,7 @@
     text-transform: uppercase;
   }
 
-  &__value {
-
+  .price__value {
     color: #ffffff;
     font-size: 24px;
     font-weight: 300;
@@ -19,7 +22,7 @@
     text-transform: uppercase;
   }
 
-  &__field {
+  .price__field {
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;

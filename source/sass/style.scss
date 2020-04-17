@@ -1,7 +1,9 @@
-@import "main-header.scss";
-@import "main-nav.scss";
-@import "intro.scss";
-@import "download.scss";
+@import "variables";
+@import "mixins";
+@import "main-header";
+@import "main-nav";
+@import "intro";
+@import "download";
 @import "advantages";
 @import "feedbacks";
 @import "price";
@@ -9,12 +11,17 @@
 @import "main-footer";
 @import "photos";
 @import "tools";
-@import "form";
+@import "author-form";
+@import "survey";
+@import "copyright";
+@import "social";
+@import "site-list";
 
 body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
+  margin: 0;
 }

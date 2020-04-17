@@ -1,18 +1,18 @@
-.social {
-  &__list {
-    list-style: none;
-  }
-
-  &__link {
-    text-decoration: none;
-  }
+.main-footer__content-wrapper {
+  @include content-wrapper;
 }
 
-.copyright {
-  &__text {
-    color: #283645;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+.main-footer--closed {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer--closed {
+    display: block;
   }
 }

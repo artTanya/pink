@@ -1,4 +1,46 @@
-
 .main-header {
   background-color: #1d2632;
+}
+
+.main-header__top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main-header__nav {
+  border-top: 1px solid #000000;
+}
+
+.main-header__content-wrapper {
+  @include content-wrapper;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__desktop-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    .main-header__toggle {
+      display: none;
+    }
+
+    .main-header__nav {
+      border-top: 0;
+    }
+  }
 }

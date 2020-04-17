@@ -1,0 +1,26 @@
+
+.survey__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.survey__link {
+  color: #d22856;
+}
+
+.survey__content-wrapper {
+  @include content-wrapper;
+}
+
+@media (max-width: $max-mobile-width) {
+  .survey {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .survey__content-wrapper {
+    display: flex;
+  }
+}

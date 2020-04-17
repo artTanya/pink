@@ -1,12 +1,7 @@
-.site-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.main-header__nav {
+  border-top: 1px solid #000000;
 
-  &__link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
+  @media (min-width: $desktop-width) {
+    border-top: 0;
   }
 }
