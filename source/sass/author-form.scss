@@ -20,10 +20,9 @@
 
 .author-form__text {
   color: #283645;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .author-form__star {
@@ -44,6 +43,17 @@
 
 .author-form__content-wrapper {
   @include content-wrapper;
+}
+
+.author-form__text-content {
+  line-height: 30px;
+  text-transform: none;
+  text-align: center;
+  margin: 0;
+}
+
+.author-form__text-hidden {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,6 +88,16 @@
   .author-form__item:nth-child(4) {
     order: -3;
   }
+
+  .author-form__text-content {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 30px;
+  }
+
+  .author-form__text-hidden {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -97,5 +117,9 @@
   .author-form__btn {
     display: flex;
     justify-content: space-between;
+  }
+
+  .author-form__text-content {
+    padding: 0 90px;
   }
 }

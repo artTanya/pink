@@ -12,7 +12,7 @@
         <div class="main-header__content-wrapper">
           <div class="main-header__top">
             <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип Пинк"></a>
-            <button class="main-header__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню </span></button>
+            <button class="main-header__burger main-header--hidden" type="button" name="button"><span class="visually-hidden">Открыть меню </span></button>
           </div>
         </div>
           <nav class="main-header__nav main-nav">
@@ -27,9 +27,9 @@
     </header>
     <main class="main">
       <section class="intro">
-          <div class="intro__top">
-            <div class="intro__content-wrapper"><h1 class="intro__title">Фотографии пользователей</h1></div>
-          </div>
+        <div class="intro__top">
+          <div class="intro__content-wrapper"><h1 class="intro__title">Фотографии пользователей</h1></div>
+        </div>
       </section>
 
       <section class="photos">
@@ -42,7 +42,6 @@
             <div class="photos__author-picture">
               <a href="#"><img class="photos__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны"></a>
             </div>
-
             <div class="photos__block">
               <div class="photos__content-wrapper">
                 <div class="photos__content">
@@ -130,7 +129,7 @@
         </div>
 
           <div class="photos__content-wrapper">
-            <p class="photos__text-content">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="photos__text-content">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
           </div>
       </section>
 
@@ -139,16 +138,16 @@
         <form class="tools__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="tools__content-wrapper">
             <div class="tools__image">
-              <img src="img/photo-road-mobile@1x.jpg" width="280" height="384" alt="Фото для обработки">
+              <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото для обработки">
             </div>
-            <div class="tools_block">
+            <div class="tools__block">
               <ul class="tools__list">
                 <li class="tools__item tools__item--crop"><span class="visually-hidden">Корректировка</span></li>
                 <li class="tools__item tools__item--fill"><span class="visually-hidden">Заливка</span></li>
                 <li class="tools__item tools__item--intesity"><span class="visually-hidden">Контраст</span></li>
               </ul>
-            <input type="range" name="range" min="0" max="100" step="1" value="50">
-            <div class="tools__buttons">
+              <input type="range" name="range" min="0" max="100" step="1" value="50">
+              <div class="tools__buttons">
                 <button class=" tools__button" type="submit" name="button">Запостить</button>
                 <button class="tools__button tools__button--grey" type="button" name="button">Отмена</button>
               </div>
@@ -177,5 +176,6 @@
           </div>
         </div>
       </footer>
+      <script src="js/script.js"></script>
   </body>
 </html>
