@@ -19,17 +19,22 @@
 }
 
 .tools__content-wrapper {
+  padding-top: 20px;
   background-color: #f2f2f2;
 
   @include content-wrapper;
 }
 
+@media (min-width: $tablet-width) {
+  .tools__content-wrapper {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .tools {
     background-color: transparent;
-  }
-
-  .tools__content-wrapper {
-    display: flex;
   }
 }

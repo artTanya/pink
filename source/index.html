@@ -12,7 +12,7 @@
         <div class="main-header__content-wrapper">
           <div class="main-header__top">
             <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип Пинк"></a>
-            <button class="main-header__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню </span></button>
+            <button class="main-header__burger main-header__burger--hidden" type="button" name="button"><span class="visually-hidden">Открыть меню </span></button>
           </div>
         </div>
           <nav class="main-header__nav main-nav">
@@ -35,9 +35,9 @@
           <div class="download__content-wrapper">
             <a class="download__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="download__list">
-              <li class="download__item download__item--apple "><a class="download__link" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Скачать для apple</span></a></li>
+              <li class="download__item download__item--apple"><a class="download__link" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Скачать для apple</span></a></li>
               <li class="download__item download__item--android"><a  class="download__link" href="https://play.google.com/store"><span class="visually-hidden">Скачать для android</span></a></li>
-              <li class="download__item download__item--windows"><a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span class="visually-hidden">Скачать для windows</span></a></li>
+              <li class="download__item download__item--microsoft"><a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span class="visually-hidden">Скачать для windows</span></a></li>
             </ul>
             <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
@@ -47,8 +47,10 @@
 
       <section class="advantages">
         <div class="advantages__headline">
-          <h2 class="advantages__text">Устали от серости мегаполиса?</h2>
-          <h2 class="advantages__text">Нам есть, что вам предложить!</h2>
+          <div class="advantages__content-wrapper">
+            <h2 class="advantages__text">Устали от серости мегаполиса?</h2>
+            <h2 class="advantages__text">Нам есть, что вам предложить!</h2>
+          </div>
         </div>
         <div class="advantages__content-wrapper">
           <div class="advantages__content">
@@ -76,7 +78,7 @@
           </div>
           <div class="survey__text">
             <h2 class="survey__title">Эффект на 24 часа!</h2>
-            <p class="survey__about">Британские ученые провели исследованияи доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="survey__about">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="survey__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -171,5 +173,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

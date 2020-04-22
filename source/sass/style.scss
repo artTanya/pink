@@ -16,6 +16,8 @@
 @import "copyright";
 @import "social";
 @import "site-list";
+@import "fonts";
+@import "button";
 
 body {
   font-weight: 400;
@@ -24,4 +26,20 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

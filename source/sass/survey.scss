@@ -24,3 +24,17 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .survey__about,
+  .survey__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  // временно
+
+  .survey__text {
+    padding: 0  110px;
+  }
+}

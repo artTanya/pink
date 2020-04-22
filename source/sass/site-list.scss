@@ -21,12 +21,18 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 650px;
+    width: 620px;
     display: flex;
     justify-content: space-between;
   }
 
   .site-list__item {
     border-bottom: none;
+  }
+
+  .site-list__link {
+    text-transform: none;
+    line-height: 18px;
+    padding: 0;
   }
 }
