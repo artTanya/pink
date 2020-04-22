@@ -3,6 +3,8 @@
 }
 
 .advantages__content-wrapper {
+  padding-top: 46px;
+
   @include content-wrapper;
 }
 
@@ -34,6 +36,7 @@
   margin-bottom: 30px;
 }
 
+
 .advantages__title {
   color: #000000;
   font-size: 18px;
@@ -61,6 +64,10 @@
     background-repeat: no-repeat;
     background-position: left top;
     min-height: 480px;
+  }
+
+  .advantages__content-wrapper {
+    padding-top: 59px;
   }
 
   .advantages__list {
@@ -96,12 +103,17 @@
     background-image: none;
   }
 
+  .advantages__content-wrapper {
+    padding-top: 78px;
+  }
+
   .advantages__text {
     font-size: 50px;
   }
 
-  .advantages__text:nth-child(2) {
+  .advantages__text:last-child {
     padding: 0 125px;
+    padding-bottom: 75px;
   }
 
   .advantages__list {
