@@ -285,4 +285,18 @@
   .author-form__text-hidden {
     display: inline-block;
   }
+
+  .author-form__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .author-form__wrapping-contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .author-form__stub {
+    width: 371px;
+  }
 }
