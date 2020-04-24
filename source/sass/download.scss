@@ -30,7 +30,7 @@
 .download__button {
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 19px;
   color: #ffffff;
   text-decoration: none;
   width: 100%;
@@ -54,7 +54,7 @@
 .download__content-wrapper {
   padding-top: 28px;
   padding-bottom: 25px;
-  min-height: 211px;
+  min-height: 218px;
 
   @include content-wrapper;
 }
@@ -66,17 +66,38 @@
 
   .download__description {
     font-size: 18px;
-    text-align: left;
+  }
+
+  .download__content-wrapper {
+    padding-top: 0;
+  }
+
+  .download__content {
+    width: 300px;
+    min-height: 326px;
   }
 
   .download__button {
-    width: 300px;
-    box-sizing: border-box;
+    margin-bottom: 45px;
+  }
+
+  .download__list {
+    padding: 0px 48px;
+    margin-bottom: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .download__content-wrapper {
+    padding-top: 50px;
+  }
+
   .download__button {
     font-size: 21px;
+    margin-bottom: 69px;
+  }
+
+  .download__list {
+    margin-bottom: 55px;
   }
 }

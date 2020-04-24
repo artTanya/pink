@@ -1,13 +1,15 @@
 .main-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: rgba(29, 38, 50, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.main-header--dense {
+  background-color: #283645;
 }
 
 .main-header__top {
   position: relative;
-  min-height: 69px;
+  min-height: 66px;
 }
 
 .main-header__nav {
