@@ -21,6 +21,11 @@
   margin: 0;
 }
 
+.advantages__item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .advantages__headline {
   background-color: #ffffff;
   text-align: center;
@@ -36,25 +41,19 @@
   margin-bottom: 30px;
 }
 
-
 .advantages__title {
   color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  text-align: center;
   margin: 0;
   margin-bottom: 12px;
 }
 
 .advantages__description {
-  text-align: center;
   margin: 0;
 }
 
-.advantages__item {
-  margin-bottom: 30px;
-}
 
 @media (min-width: $tablet-width) {
   .advantages__content {
@@ -74,26 +73,19 @@
     padding-top: 70px;
   }
 
+  .advantages__item {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
   .advantages__text {
     font-size: 40px;
     line-height: 1.2;
     margin: 0;
   }
 
-  .advantages__item {
-    margin-bottom: 34px;
-  }
-
   .advantages__text:nth-child(2) {
     padding: 0 30px;
-  }
-
-  .advantages__title {
-    text-align: left;
-  }
-
-  .advantages__description {
-    text-align: left;
   }
 }
 
@@ -104,16 +96,7 @@
   }
 
   .advantages__content-wrapper {
-    padding-top: 78px;
-  }
-
-  .advantages__text {
-    font-size: 50px;
-  }
-
-  .advantages__text:last-child {
-    padding: 0 125px;
-    padding-bottom: 75px;
+    padding-top: 69px;
   }
 
   .advantages__list {
@@ -121,24 +104,6 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-  }
-
-  .advantages__title {
-    font-size: 30px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0;
-    padding-top: 60px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 23px;
-  }
-
-  .advantages__description {
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    padding: 0 34px;
   }
 
   .advantages__item {
@@ -159,5 +124,34 @@
 
   .advantages__item--friends {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
+  }
+
+  .advantages__text {
+    font-size: 50px;
+  }
+
+  .advantages__text:last-child {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 23px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 34px;
   }
 }

@@ -1,3 +1,7 @@
+.author-form {
+  margin-bottom: 54px;
+}
+
 .author-form__checkbox,
 .author-form__radio,
 .author-form__textarea,
@@ -36,6 +40,8 @@
   margin: 0;
 }
 
+
+
 .author-form__text {
   color: #283645;
   line-height: 30px;
@@ -44,9 +50,6 @@
   margin: 0;
 }
 
-.author-form__star {
-  color: #d22856;
-}
 
 .author-form__button {
   width: 100%;
@@ -61,6 +64,11 @@
   text-transform: uppercase;
   text-align: center;
   padding: 0;
+  margin-bottom: 35px;
+}
+
+.author-form__star {
+  color: #d22856;
 }
 
 .author-form__content-wrapper {
@@ -114,6 +122,10 @@
   margin-bottom: 40px;
 }
 
+.author-form__item:nth-child(5) {
+  margin-bottom: 48px;
+}
+
 .author-form__item.author-form__item--grey {
   // background-color: #f2f2f2;
   padding-top: 35px;
@@ -136,12 +148,14 @@
 
 .author-form__textarea {
   width: 100%;
-  min-height: 197px;
+  min-height: 201px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   resize: none;
+  padding: 0;
   padding-top: 15px;
   padding-left: 20px;
+  margin-top: 17px;
   box-sizing: border-box;
 }
 
