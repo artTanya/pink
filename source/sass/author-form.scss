@@ -22,6 +22,10 @@
   line-height: 30px;
 }
 
+.author-form__input {
+  outline: none;
+}
+
 .author-form__label,
 .author-form__title,
 .author-form__title-hidden {
@@ -55,16 +59,25 @@
   width: 100%;
   min-height: 63px;
   color: #ffffff;
-  border: 2px solid #2aab6d;
+  border:none;
   border-radius: 2px;
   background-color: #2aab6d;
   font-size: 18px;
+  font-family: "Open Sans";
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   padding: 0;
   margin-bottom: 35px;
+}
+
+.author-form__button:hover {
+  background-color: #1c9b5e;
+}
+
+.author-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .author-form__star {
@@ -95,6 +108,7 @@
   outline: 2px solid pink;
 }
 
+
 .author-form__label {
   display: inline-block;
   padding-left: 22px;
@@ -115,6 +129,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
 }
 
 .author-form__item:nth-child(3) {
@@ -163,6 +178,67 @@
   display: none;
 }
 
+.author-form__checkbox,
+.author-form__radio {
+  display: flex;
+  align-items: center;
+}
+
+.author-form__check-input,
+.author-form__radio-input {
+  appearance: none;
+}
+
+.author-form__check-btn {
+  display: block;
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.author-form__check-input:checked + .author-form__checkbox  .author-form__check-btn {
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.author-form__radio-btn {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.author-form__radio-input:checked + .author-form__radio .author-form__radio-btn::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.author-form__check-btn:hover,
+.author-form__radio-btn:hover,
+.author-form__input:hover {
+  border-color:#283645;
+}
+
+.author-form__check-btn:active,
+.author-form__radio-btn:active,
+.author-form__input:active {
+  border-color:#d22856;
+}
+
 @media (min-width: $tablet-width) {
   .author-form__content-wrapper {
     display: flex;
@@ -175,6 +251,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 2px;
     padding: 0 60px;
+    margin-bottom: 60px;
   }
 
   .author-form__item:first-child {
@@ -206,6 +283,7 @@
     font-size: 18px;
     line-height: 30px;
     padding: 0 30px;
+    padding-top: 94px;
     margin-bottom: 74px;
   }
 
@@ -271,6 +349,11 @@
   .author-form__item.author-form__item--grey {
     background-color: transparent;
   }
+}
+
+.author-form__textarea {
+  padding-top: 21px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: $desktop-width) {
