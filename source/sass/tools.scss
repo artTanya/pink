@@ -7,10 +7,19 @@
 }
 
 .tools__button {
+  width: 100%;
+  border: 3px solid #d22856;
   color: #d22856;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.tools__button:hover {
+  color: #ffffff; 
+  background-color: #d22856; 
+}
+
+.tools__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .tools__button--grey {
@@ -31,10 +40,27 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .tools__block {
+    width: 275px;
+  }
+
+  .tools__image {
+    margin-right: 45px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tools {
     background-color: transparent;
+  }
+
+  .tools__block {
+    width: 410px;
+  }
+
+  .tools__buttons {
+    display: flex;
+    justify-content: space-between;
   }
 }

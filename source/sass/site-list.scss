@@ -19,6 +19,11 @@
   margin: 0 auto;
 }
 
+.site-list__link:hover {
+  color: #d22856;
+} 
+
+
 @media (min-width: $desktop-width) {
   .site-list {
     width: 620px;

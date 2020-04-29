@@ -104,7 +104,7 @@
 
 .author-form__wrapper {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
   outline: 2px solid pink;
 }
 
@@ -187,6 +187,7 @@
 .author-form__check-input,
 .author-form__radio-input {
   appearance: none;
+  margin: 0;;
 }
 
 .author-form__check-btn {
@@ -196,6 +197,7 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 
 .author-form__check-input:checked + .author-form__checkbox  .author-form__check-btn {
@@ -203,6 +205,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .author-form__radio-btn {
   position: relative;
@@ -212,6 +215,7 @@
   border-radius: 50%;
   background-color: #ffffff;
   box-sizing: border-box;
+  margin-right: 30px;
 }
 
 .author-form__radio-input:checked + .author-form__radio .author-form__radio-btn::after {
@@ -227,16 +231,21 @@
   transform: translate(-50%,-50%);
 }
 
-.author-form__check-btn:hover,
-.author-form__radio-btn:hover,
+.author-form__checkbox:hover .author-form__check-btn,
+.author-form__radio:hover .author-form__radio-btn,
 .author-form__input:hover {
   border-color:#283645;
 }
 
-.author-form__check-btn:active,
-.author-form__radio-btn:active,
+
+.author-form__checkbox:active .author-form__check-btn,
+.author-form__radio:active .author-form__radio-btn,
 .author-form__input:active {
   border-color:#d22856;
+}
+
+.author-form__button-contacts{
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -312,8 +321,30 @@
   }
 
   .author-form__stub {
+    position: relative;
     display: flex;
     flex-direction: column;
+  }
+
+  .author-form__button-contacts {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    background-color: #e5e5e5;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .author-form__button-contacts--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .author-form__button-contacts--email {
+    background-image: url("../img/icon-mail.svg");
   }
 
   .author-form__stub .author-form__label {
@@ -348,14 +379,24 @@
 
   .author-form__item.author-form__item--grey {
     background-color: transparent;
+    padding-top: 43px;
+  }
+
+
+  .author-form__textarea {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .author-form__item.author-form__item--wide {
+    padding-bottom: 50px;
+  }
+
+  .author-form__check-btn,
+  .author-form__radio-btn {
+    margin-right: 22px;
   }
 }
-
-.author-form__textarea {
-  padding-top: 21px;
-  padding-bottom: 30px;
-}
-
 @media (min-width: $desktop-width) {
   .author-form__content-wrapper {
     display: flex;
