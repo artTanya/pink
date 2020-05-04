@@ -37,8 +37,17 @@
   font-weight: 300;
   text-align: center;
   margin: 0;
-  // padding: 0 15px;
 }
+
+.contacts__value:hover {
+  text-decoration: underline;
+  color: #283645;
+}
+
+.contacts__value:active {
+  color: rgba(40,54,69,0.3);
+}
+
 
 @media (min-width: $tablet-width) {
   .contacts__list {

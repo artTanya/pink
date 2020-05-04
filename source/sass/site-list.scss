@@ -23,6 +23,10 @@
   color: #d22856;
 } 
 
+.site-list__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 @media (min-width: $desktop-width) {
   .site-list {

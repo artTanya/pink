@@ -136,29 +136,46 @@
           </div>
       </section>
 
-      <section class="tools">
+      <form action="https://echo.htmlacademy.ru/" method="post" class="upload-form">
         <h2 class="visually-hidden">Загрузка фотографии и ее обработка</h2>
-        <form class="tools__form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="tools__content-wrapper">
-            <div class="tools__image">
-              <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото для обработки">
-            </div>
-            <div class="tools__block">
-              <ul class="tools__list">
-                <li class="tools__item tools__item--crop"><span class="visually-hidden">Корректировка</span></li>
-                <li class="tools__item tools__item--fill"><span class="visually-hidden">Заливка</span></li>
-                <li class="tools__item tools__item--intesity"><span class="visually-hidden">Контраст</span></li>
-              </ul>
-              <input type="range" name="range" min="0" max="100" step="1" value="50">
-              <div class="tools__buttons">
-                <button class=" tools__button button" type="submit" name="button">Запостить</button>
-                <button class="tools__button button" type="button" name="button">Отмена</button>
-              </div>
-            </div>
+        <div class="upload-form__content-wrapper">
+          <div class="upload-form__image">
+            <img src="../img/photo-road-mobile@1x.jpg">
           </div>
-        </form>
-
-      </section>
+          <div class="upload-form__wrapper">
+            <ul class="upload-form__list">
+              <li class="upload-form__item upload-form__item--active">
+                <button class="upload-form__btn upload-form__btn--crop" type="button" aria-label="Перетащите, чтобы изменить значение"></button>
+                <div class="upload-form__range">
+                  <div class="upload-form__scale">
+                    <button class="upload-form__handle" type="button" aria-label="Перетащите, чтобы изменить значение">1</button>
+                  </div>
+                </div> 
+              </li>
+              <li class="upload-form__item">
+                <button class="upload-form__btn upload-form__btn--fill" type="button" aria-label="Перетащите, чтобы изменить значение"></button>
+                <div class="upload-form__range">
+                  <div class="upload-form__scale">
+                    <button class="upload-form__handle" type="button" aria-label="Перетащите, чтобы изменить значение">2</button>
+                  </div>
+                </div> 
+              </li>
+              <li class="upload-form__item">
+                <button class="upload-form__btn upload-form__btn--intesity" type="button" aria-label="Перетащите, чтобы изменить значение"></button>
+                <div class="upload-form__range">
+                  <div class="upload-form__scale">
+                    <button class="upload-form__handle" type="button" aria-label="Перетащите, чтобы изменить значение">3</button>
+                  </div>
+                </div> 
+              </li>
+            </ul>
+            <div class="upload-form__buttons">
+              <input class="upload-form__button button" type="submit" value="Запостить">
+              <input class="upload-form__button upload-form__button--grey button" type="reset" value="Отмена">
+            </div>
+          </div>   
+        </div>  
+      </form>
       </main>
 
       <footer class="main-footer">
