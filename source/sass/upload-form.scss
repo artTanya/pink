@@ -1,13 +1,16 @@
 .upload-form {
   position: relative;
   background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .upload-form__content-wrapper {
-  padding-top: 20px;
-  background-color: #f2f2f2;
-
   @include content-wrapper;
+}
+
+.upload-form__img {
+  display: block;
 }
 
 .upload-form__list {
@@ -30,34 +33,59 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  margin-right: 34px;
-}
-
-.upload-form__btn--crop {
-  background-image: url("../img/icon-editor-crop.svg");
-}
-
-.upload-form__btn--fill {
-  background-image: url("../img/icon-editor-fill.svg");
-}
-
-.upload-form__btn--intesity {
-  background-image: url("../img/icon-editor-contrast.svg");
 }
 
 .upload-form__range {
-  // display: none;
+  display: none;
 }
 
-.upload-form__range:first-child {
-  display: block;
-  position: absolute;
-  overflow: auto;
+.upload-form__buttons {
+  padding-top: 38px;
 }
 
+@media (max-width: $max-mobile-width) {
+  .upload-form {
+    position: relative;
+  }
+
+  .upload-form__item--active .upload-form__range {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 28px;
+  }
+  
+  .upload-form__item svg {
+    fill: rgba(40,54,69,0.3);
+  }
+  .upload-form__item svg:hover {
+    fill: rgba(40,54,69,0.5);
+  }
+
+  .upload-form__item--active svg {
+    fill: #d22856;
+  }
+
+  .upload-form__btn--fill {
+     margin: 0 20px;  
+  }
+
+  .upload-form__list {
+    padding-top: 35px;
+  }
+
+  .upload-form__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #dedfe1;
+  }
+}
 
 .upload-form__scale {
-  // position: relative;
+  position: relative;
   width: 240px;
   height: 2px;
   background-color: #283645;
@@ -67,9 +95,6 @@
   position: absolute;
   top: 50%;
   left: 193px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
@@ -90,7 +115,7 @@
   width: 100%;
   border: 3px solid #d22856;
   color: #d22856;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .upload-form__button:hover {
@@ -120,11 +145,20 @@
   color: rgba(255,255,255, 0.3);
 }
 
+.upload-form__button.upload-form__button--grey {
+  margin-bottom: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .upload-form {
+    padding-top: 0;
+  }
+
   .upload-form__content-wrapper {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+    outline: 1px solid red;
   }
 
   .upload-form__wrapper {
@@ -132,6 +166,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    outline: 1px solid pink;
   }
 
   .upload-form__image {
@@ -146,6 +181,7 @@
   .upload-form__item {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #dedfe1;
   }
 
   .upload-form__range {
@@ -156,8 +192,16 @@
     width: 202px;
   }
 
-  .upload-form__handle {
+  .upload-form__handle--crop {
     left: 145px;
+  }
+
+  .upload-form__handle--fill {
+    left: 25px;
+  }
+
+  .upload-form__handle--intesity {
+    left: 95px;
   }
 
   .upload-form__button {
@@ -165,15 +209,44 @@
     box-sizing: border-box;
   }
 
-  .upload-form__button:last-child {
-    margin-bottom: 0;
+  .upload-form__btn--crop svg {
+    width: 22px;
+    height: 22px;
+    fill: #d22856;
+  }
+
+  .upload-form__btn--fill svg {
+    width: 24px;
+    height: 22px;
+    fill: #d22856;
+  }
+
+  .upload-form__btn--intesity svg {
+    width: 16px;
+    height: 16px;
+    fill: #d22856;
   }
 }
 
-
 @media (min-width: $desktop-width) {
+  .upload-form {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .upload-form__content-wrapper {
+    padding-left: 80px;
+    padding-right: 60px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+  }
+
   .upload-form__wrapper {
     width: 410px;
+  }
+
+  .upload-form__image {
+    margin-right: 88px;
   }
 
   .upload-form__scale {
@@ -188,6 +261,15 @@
     flex-direction: column;  
   } 
 
+  .upload-form__item {
+    padding: 5px 0;
+  }
+
+
+  .upload-form__btn {
+    margin-right: 38px;
+  }
+
   .upload-form__buttons {
     display: flex;
     justify-content: space-between;
@@ -196,6 +278,35 @@
   .upload-form__button {
     width: 183px;
     margin: 0;
+  }
 
+  .upload-form__btn--crop svg {
+    width: 44px;
+    height: 44px;
+    fill: #d22856;
+  }
+
+  .upload-form__btn--fill svg {
+    width: 48px;
+    height: 43px;
+    fill: #d22856;
+  }
+
+  .upload-form__btn--intesity svg {
+    width: 32px;
+    height: 32px;
+    fill: #d22856;
+  }
+
+  .upload-form__handle--crop {
+    left: 70px;
+  }
+
+  .upload-form__handle--fill {
+    left: 247px;
+  }
+
+  .upload-form__handle--intesity {
+    left: 160px;
   }
 }

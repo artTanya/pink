@@ -1,9 +1,18 @@
+.main-footer {
+  padding-top: 40px;
+}
 .main-footer__content-wrapper {
   @include content-wrapper;
 }
 
 .main-footer--closed {
   display: none;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,5 +23,11 @@
 
   .main-footer--closed {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 98px;
   }
 }
