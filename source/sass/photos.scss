@@ -63,23 +63,22 @@
 }
 
 .photos__like-text {
-  padding-left: 27px;
+  padding-left: 19px;
 }
 
 .photos__like-button {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   border: none;
+  padding: 0;
 }
 
 .photos__like-button::before {
   content: "";
   display: block;
-  width: 13px;
+  width: 12.5px;
   height: 12px;
-  position: absolute;
   background-image: url("../img/icon-heart.svg");
-  left: 0;
-  bottom: 7px;
 }
 
 .photos__item {
@@ -115,6 +114,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photos__like-text {
+    padding: 0;
+  }
+
   .photos__item.photos__item--wide {
     margin-bottom: 50px;
   }
@@ -163,6 +166,10 @@
 
   .photos__text-content {
     font-size: 18px;
+  }
+
+  .photos__like-button::before {
+    order:1;
   }
 
 }
