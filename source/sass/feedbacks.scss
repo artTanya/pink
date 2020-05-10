@@ -61,6 +61,14 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .feedbacks {
+    padding-top: 120px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+
+  }
   .feedbacks__text {
     padding: 0 105px;
   }
@@ -72,5 +80,9 @@
 
   .feedbacks__description {
     font-size: 18px;
+  }
+
+  .feedbacks__toggles {
+    display: none;
   }
 }
