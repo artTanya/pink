@@ -1,7 +1,9 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .copyright__text {
   color: #283645;
   font-size: 14px;
@@ -10,9 +12,10 @@
   margin-right: 15px;
 }
 
-
 .copyright__link svg {
   fill: #d22856;
+  position: relative;
+  top: 5px;
 }
 
 .copyright__link svg:hover {
@@ -23,9 +26,14 @@
   fill: rgba(40, 54, 69, 0.3);
 }
 
+
 @media (min-width: $tablet-width) {
   .copyright {
     display: block;
+  }
+
+  .copyright__link svg {
+    top: 15px;
   }
 }
 

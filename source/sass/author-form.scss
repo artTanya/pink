@@ -42,6 +42,7 @@
   line-height: 18px;
   padding: 0 20px;
   margin: 0;
+  margin-bottom: 17px;
 }
 
 
@@ -170,7 +171,7 @@
   padding: 0;
   padding-top: 15px;
   padding-left: 20px;
-  margin-top: 17px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 
@@ -300,8 +301,8 @@
     display: inline-block;
   }
 
-  .authr-form__title {
-    margin-bottom: 50px;
+  .author-form__title {
+    margin: 0;
   }
 
   .author-form__wrap {
@@ -310,6 +311,10 @@
   }
 
   .author-form__wrap:last-child {
+    margin-bottom: 0;
+  }
+
+  .author-form__wrapping {
     margin-bottom: 0;
   }
 
@@ -324,6 +329,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
   }
 
   .author-form__button-contacts {
@@ -375,6 +381,7 @@
 
   .author-form__title-hidden {
     display: block;
+    margin: 0;
   }
 
   .author-form__item.author-form__item--grey {
@@ -382,14 +389,10 @@
     padding-top: 43px;
   }
 
-
-  .author-form__textarea {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-
   .author-form__item.author-form__item--wide {
     padding-bottom: 50px;
+    padding-top: 39px;
+    margin-bottom: 60px;
   }
 
   .author-form__check-btn,
@@ -409,6 +412,10 @@
 
   .author-form__item--wide {
     flex-basis: 940px;
+  }
+
+  .author-form__item.author-form__item--wide {
+    padding-bottom: 0;
   }
 
   .author-form__btn {
@@ -438,5 +445,6 @@
 
   .author-form__stub {
     width: 371px;
+    margin: 0;
   }
 }

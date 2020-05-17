@@ -11,11 +11,35 @@
   display: block;
 }
 
-.photos__image:first-child {
+.photos__panorama {
   width: 100%;
+  display: block;
 }
 
-.photos__text-content {
+.photos__author-picture:first-child {
+  position: relative;
+}
+
+.photos__panorama-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 140px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
+.photos__text-content,
+.photos__text-content-bottom {
   color: #283645;
   font-size: 14px;
   font-weight: 400;
@@ -31,6 +55,10 @@
 
 .photos__text-content:nth-child(2) {
   margin-bottom: 50px;
+}
+
+.photos__text-content-bottom:nth-child(2) {
+  margin-bottom: 40px;
 }
 
 .photos__text {
@@ -64,6 +92,7 @@
 
 .photos__like-text {
   padding-left: 19px;
+  margin-right: 2px;
 }
 
 .photos__like-button {
@@ -76,9 +105,11 @@
 .photos__like-button::before {
   content: "";
   display: block;
-  width: 12.5px;
+  width: 13px;
   height: 12px;
   background-image: url("../img/icon-heart.svg");
+  position: relative;
+  top: 5px;
 }
 
 .photos__item {
@@ -96,6 +127,7 @@
 
 .photos__list {
   @include content-wrapper;
+  margin-bottom: 45px;
 }
 
 .photos__content-wrapper {
@@ -119,7 +151,9 @@
   }
 
   .photos__item.photos__item--wide {
+    margin: 0;
     margin-bottom: 50px;
+
   }
 
   .photos__block {
@@ -160,16 +194,25 @@
 
   .photos__like-button--top {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 27px;
+    right: 43px;
   }
 
-  .photos__text-content {
+  .photos__text-content,
+  .photos__text-content-bottom {
     font-size: 18px;
+  }
+
+  .photos__text-content-bottom:nth-child(2) {
+    margin-bottom: 70px;
   }
 
   .photos__like-button::before {
     order:1;
+  }
+
+  .photos__panorama-day {
+    top: 24px;
   }
 
 }
@@ -193,6 +236,17 @@
 
   .photos__text-content {
     font-size: 18px;
+  }
 
+  .photos__text-content:first-child {
+    padding-top: 90px;
+  }
+
+  .photos__text-content:nth-child(2) {
+    margin-bottom: 90px; 
+   }
+
+  .photos__panorama-day {
+    top: 54px;
   }
 }

@@ -1,5 +1,7 @@
 .contacts {
   background-color: #ffffff;
+  padding-top: 29px;
+  padding-bottom: 40px;
 }
 
 .contacts__content-wrapper {
@@ -48,7 +50,6 @@
   color: rgba(40,54,69,0.3);
 }
 
-
 @media (min-width: $tablet-width) {
   .contacts__list {
     display: flex;
@@ -60,9 +61,16 @@
     font-size: 40px;
     margin-bottom: 45px;
   }
+
+  .contacts__value:last-child {
+    width: 211px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 65px;
+  }
   .contacts__item:nth-child(2) {
     order: 1;
   }

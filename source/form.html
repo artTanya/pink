@@ -11,7 +11,13 @@
       <div class="main-header__desktop-wrap">
         <div class="main-header__content-wrapper">
           <div class="main-header__top">
-            <a class="main-header__logo" href="#"><img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" width="74" height="22" alt="Логотип Пинк"></a>
+            <a class="main-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+              </picture>
+            </a>
             <button class="main-header__burger main-header__burger--hidden" type="button" name="button"><span class="visually-hidden">Открыть меню </span></button>
           </div>
         </div>
@@ -132,7 +138,12 @@
     <footer class="main-footer">
       <div class="main-footer__content-wrapper">
         <div class="main-footer__wrapper">
-          <a class="main-footer__logo" href="#"><img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк"></a>
+          <a class="main-footer__logo" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк">
+            </picture>
+          </a> 
         </div>
         <div class="main-footer__social social">
           <ul class="social__list">

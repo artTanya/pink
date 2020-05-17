@@ -1,12 +1,17 @@
 
 .survey__title {
+  width: 170px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .survey__link {
   color: #d22856;
+  text-decoration: none;
+  border-bottom: 1px solid #d22856;
 }
 
 .survey__content-wrapper {
@@ -20,21 +25,44 @@
 }
 
 @media (min-width: $tablet-width) {
+  .survey {
+    padding-top: 59px;
+  }
   .survey__content-wrapper {
     display: flex;
+    justify-content: space-between;
+  }
+  .survey__text {
+    width: 295px;
+    padding-right: 15px;
+  }
+  .survey__about {
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .survey {
+    background-color: #f2f2f2;
+    padding-bottom: 67px;
+  }
+
   .survey__about,
   .survey__link {
     font-size: 18px;
     line-height: 30px;
   }
 
-  // временно
+  .survey__title {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .survey__about {
+    margin-bottom: 30px;
+  }
 
   .survey__text {
-    padding: 0  110px;
+    width: 525px;
   }
 }

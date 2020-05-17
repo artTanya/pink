@@ -1,6 +1,7 @@
 .feedbacks {
   background-color: #ffffff;
   text-align: center;
+  padding-top: 40px;
 }
 
 .feedbacks__content-wrapper {
@@ -11,13 +12,14 @@
 
 .feedbacks__item {
   margin: 0;
+  margin-bottom: 26px;
 }
 
 .feedbacks__author-name {
   display: inline-block;
   font-style: normal;
   color: #000000;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
@@ -36,7 +38,19 @@
   margin: 0;
 }
 
+.feedbacks__toggles {
+  margin: 0;
+}
+
+.feedbacks__toggles-arrows {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .feedbacks {
+    padding-bottom: 25px;
+  }
+  
   .feedbacks__item {
     display: flex;
     flex-direction: column;
@@ -63,14 +77,26 @@
 @media (min-width: $desktop-width) {
 
   .feedbacks {
-    padding-top: 120px;
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-
+    padding-top: 190px;
+    padding-bottom: 50px;
   }
   .feedbacks__text {
     padding: 0 105px;
+  }
+
+  .feedbacks__item {
+    position: relative;
+  }
+
+  .feedbacks__item::before {
+    content: "";
+    position: absolute;
+    right: 425px;
+    top: -110px;
+    width: 79px;
+    height: 63px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
   }
 
   .feedbacks__author-name {
@@ -84,5 +110,10 @@
 
   .feedbacks__toggles {
     display: none;
+  }
+
+  .feedbacks__toggles-arrows {
+    display: block;
+    margin: 0;
   }
 }
