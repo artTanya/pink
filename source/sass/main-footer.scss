@@ -15,6 +15,14 @@
   margin-bottom: 35px;
 }
 
+.main-footer__logo svg:hover {
+  fill: #d22856;
+}
+
+.main-footer__logo svg:active {
+  fill: #d22856;
+}
+
 @media (min-width: $tablet-width) {
   .main-footer__content-wrapper {
     display: flex;
@@ -29,5 +37,8 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     padding-top: 98px;
+  }
+  .main-footer__social {
+    margin-right:-33px;
   }
 }

@@ -9,11 +9,22 @@
 }
 
 .advantages__content {
+  position: relative;
   padding-bottom: 330px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+// .advantages__content::before {
+//   content: "";
+//   position: absolute;
+//   top: 30px;
+
+//   background-image: url("../img/bg-triangle-white.svg");
+//   background-repeat: no-repeat;
+//   z-index: 2;
+// }
 
 .advantages__list {
   list-style: none;

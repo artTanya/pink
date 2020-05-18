@@ -1,0 +1,34 @@
+.interactive-map__iframe {
+  width: 100%;
+  min-height: 200px;
+}
+.interactive-map {
+  position: relative;
+}
+
+.interactive-map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+}
+
+@media (min-width: $tablet-width) {
+    .interactive-map__iframe {
+      min-height: 375px;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    .interactive-map__iframe {
+      min-height: 502px;
+    }
+
+}

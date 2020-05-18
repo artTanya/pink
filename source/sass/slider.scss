@@ -9,6 +9,14 @@
   margin-right: 15px;
 }
 
+.slider__toggle:hover {
+  background-color: #7e868f;
+}
+
+.slider__toggle:active {
+  background-color: #e9ebec;
+}
+
 .slider__toggle--active {
   width: 12px;
   height: 12px;

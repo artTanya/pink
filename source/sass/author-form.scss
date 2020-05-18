@@ -106,7 +106,6 @@
 .author-form__wrapper {
   display: flex;
   margin-bottom: 43px;
-  outline: 2px solid pink;
 }
 
 
@@ -143,14 +142,12 @@
 }
 
 .author-form__item.author-form__item--grey {
-  // background-color: #f2f2f2;
   padding-top: 35px;
 }
 
 .author-form__wrap,
 .author-form__stub {
   margin-bottom: 17px;
-  outline: 2px solid pink;
 }
 
 .author-form__wrap:last-child,
@@ -371,7 +368,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    outline: 2px solid pink;
   }
 
   .author-form__text {
