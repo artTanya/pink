@@ -33,18 +33,22 @@
 @media (min-width: $tablet-width) {
   .survey {
     padding-top: 59px;
+    margin-bottom: 90px;
   }
+
   .survey__content-wrapper {
     display: flex;
-    // justify-content: space-between;
   }
+
   .survey__text {
     width: 300px;
     padding-right: 15px;
     padding-top: 40px;
   }
+
   .survey__about {
     margin: 0;
+    margin-bottom: 8px;
   }
 
   .survey__icon {
@@ -61,8 +65,9 @@
 @media (min-width: $desktop-width) {
   .survey {
     background-color: #f2f2f2;
-    padding-bottom: 67px;
+    padding-bottom: 60px;
     padding-top: 33px;
+    margin: 0;
   }
 
   .survey__about,
@@ -76,7 +81,9 @@
     padding: 0;
     margin-bottom: 20px;
   }
+
   .survey__about {
+    width: 525px;
     margin-bottom: 30px;
   }
 

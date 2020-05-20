@@ -30,11 +30,6 @@
   }
 }
 
-.main-header__logo {
-  display: flex;
-  align-items: center;
-}
-
 .main-header__burger {
   position: relative;
   display: flex;
@@ -153,5 +148,9 @@
 
   .main-header__nav {
     border-top: 0;
+  }
+
+  .main-header--dense {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

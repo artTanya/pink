@@ -5,6 +5,8 @@
 .price {
   background-color: #f2f2f2;
   position: relative;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .price::before {
@@ -54,10 +56,15 @@
   box-sizing: border-box;
 }
 
+.price__toggles {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .price {
     padding-top: 130px;
     padding-bottom: 68px;
+    margin-bottom: 45px;
   }
 
   .price__title {
@@ -66,8 +73,26 @@
     padding-bottom: 7px;
   }
 
+  .price__title:first-child {
+    opacity: 0;
+  }
+
   .price__title:nth-child(2) {
     border-radius: 4px 0 0 4px;
+  }
+
+  .price__title:nth-child(3) {
+    position: relative;
+  }
+
+  .price__title:nth-child(3)::before {
+    content:"хит";
+    display: block;
+    width: 61px;
+    height: 61px;
+    top: 0;
+    position: absolute;
+    background-image: url("../img/bg-hit-tablet.svg");
   }
 
   .price__title:nth-child(4) {
@@ -113,7 +138,9 @@
   .price {
     padding-top: 160px;
     padding-bottom: 95px;
+    margin-bottom: 63px;
   }
+
   .price__field {
      width: 238px;
      font-size: 18px;
@@ -131,5 +158,19 @@
     font-size: 18px;
     padding-top: 16px;
     padding-bottom: 20px;
+  }
+
+  .price__title:nth-child(3) {
+    position: relative;
+  }
+
+  .price__title:nth-child(3)::before {
+    content:"хит";
+    display: block;
+    width: 74px;
+    height: 73px;
+    top: 0;
+    position: absolute;
+    background-image: url("../img/bg-hit.svg");
   }
 }
