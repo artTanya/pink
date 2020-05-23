@@ -39,100 +39,115 @@
       </section>
 
       <form class="author-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="author-form__text">
-          <div class="author-form__content-wrapper">
+        <div class="author-form__content-wrapper">  
+          <div class="author-form__text">
             <p class="author-form__text-content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="author-form__text-content-hidden">Пожалуйста, заполните форму ниже:</span></p>
           </div>
         </div>
-        <div class="author-form__content-wrapper">
-          <fieldset class="author-form__item">
-            <div class="author-form__wrap">
-              <label class="author-form__label" for="surname">Фамилия:</label>
-              <input class="author-form__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
-            </div>
-            <div class="author-form__wrap">
-              <label  class="author-form__label" for="name">Имя:</label>
-              <input class="author-form__input" type="text" name="name" id="name"  required placeholder="Введите ваше имя *">
-            </div>
-              <div class="author-form__wrap">
-                <label class="author-form__label" for="thirdname">Отчество:</label>
-                <input  class="author-form__input" type="text" name="thirdname" id="thirdname"  placeholder="Ну и отчество тоже">
-              </div>
-          </fieldset>
-          <fieldset class="author-form__item author-form__item--grey author-form__item--wide">
-            <legend class="author-form__title">Ваши безбашенные достижения в путешествии</legend>
-            <div class="author-form__container">
-              <div class="author-form__wrapping">
-                <div class="author-form__wrapper">
-                  <input  class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-1" checked>
-                  <label class="author-form__checkbox" for="checkbox-1"><span class="author-form__check-btn"></span> Сделал селфи с акулой</label>
+          <div class="author-form__content-wrapper">
+            <fieldset class="author-form__item author-form__item--name">
+                <div class="author-form__wrap">
+                  <label class="author-form__label" for="surname">Фамилия:</label>
+                  <input class="author-form__input" type="text" name="surname" id="surname" required placeholder="Укажите фамилию *">
                 </div>
-                <div class="author-form__wrapper">
-                  <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-2" checked>
-                  <label class="author-form__checkbox" for="checkbox-2"><span class="author-form__check-btn"></span>Обгорел на пляже</label>
+                <div class="author-form__wrap">
+                  <label  class="author-form__label" for="name">Имя:</label>
+                  <input class="author-form__input" type="text" name="name" id="name"  required placeholder="Введите ваше имя *">
                 </div>
-              </div>
-              <div class="author-form__wrapping">
-                <div class="author-form__wrapper">
-                  <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-3">
-                  <label class="author-form__checkbox" for="checkbox-3"><span class="author-form__check-btn"></span>Видел Чака Норриса</label>
-                </div>
-                <div class="author-form__wrapper">
-                  <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-4">
-                  <label  class="author-form__checkbox" for="checkbox-4"><span class="author-form__check-btn"></span>Накупил сувениров</label>
-                </div>
-              </div>
-              <div class="author-form__wrapping">
-                <div class="author-form__wrapper">
-                  <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-5" checked>
-                  <label class="author-form__checkbox" for="checkbox-5"><span class="author-form__check-btn"></span>Удержал башню</label>
-                </div>
-                <div class="author-form__wrapper">
-                  <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-6">
-                  <label class="author-form__checkbox" for="checkbox-6"><span class="author-form__check-btn"></span>Разгромил отель</label>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="author-form__item author-form__item--wide">
-            <legend class="author-form__title-hidden">Контактная информация</legend>
-            <div class="author-form__wrapping-contacts">
-              <div class="author-form__stub">
-                <label class="author-form__label" for="telephone">Номер телефона</label>
-                <input class="author-form__input" type="tel" name="tel" id="telephone" placeholder="Номер, пожалуйста">
-                <button class="author-form__button-contacts author-form__button-contacts--phone"></button>
-              </div>
-              <div class="author-form__stub">
-                <label class="author-form__label" for="email">Адрес почты</label>
-                <input class="author-form__input" type="email" name="email" id="email" required placeholder="Введите почту *">
-                <button class="author-form__button-contacts author-form__button-contacts--email"></button>
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="author-form__item author-form__item--grey">
-            <legend class="author-form__title">С каким приложением путешествовали?</legend>
-            <div class="author-form__wrapper">
-              <input  class="author-form__radio-input" type="radio" name="radio" id="radio-1" checked>
-              <label class="author-form__radio" for="radio-1"><span class="author-form__radio-btn"></span>Pink для iOS</label>
-            </div>
-            <div class="author-form__wrapper">
-              <input class="author-form__radio-input" type="radio" name="radio" id="radio-2" >
-              <label class="author-form__radio" for="radio-2"><span class="author-form__radio-btn"></span>Pink на Android</label>
-            </div>
-            <div class="author-form__wrapper">
-              <input class="author-form__radio-input" type="radio" name="radio" id="radio-3">
-              <label class="author-form__radio" for="radio-3"><span class="author-form__radio-btn"></span>Windows Phone</label>
-            </div>
-          </fieldset>
-          <fieldset class="author-form__item author-form__item--wide">
-            <legend class="author-form__title">Опишите свои эмоции</legend>
-            <textarea class="author-form__textarea" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <div class="author-form__btn">
-            <button class="author-form__button" type="submit">Отправить форму</button>
-            <p class="author-form__text"><span class="author-form__star">*</span> — обязательные <span class="author-form__text-hidden">для заполнения</span>поля</p>
+                  <div class="author-form__wrap">
+                    <label class="author-form__label" for="thirdname">Отчество:</label>
+                    <input  class="author-form__input" type="text" name="thirdname" id="thirdname"  placeholder="Ну и отчество тоже">
+                  </div>
+            </fieldset>
           </div>
+          <div class="author-form__bg-container">
+            <div class="author-form__content-wrapper">
+              <fieldset class="author-form__item author-form__item--achievements">
+                <legend class="author-form__title">Ваши безбашенные достижения в путешествии</legend>
+                <div class="author-form__container">
+                  <div class="author-form__wrapping">
+                    <div class="author-form__wrapper">
+                      <input  class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-1" checked>
+                      <label class="author-form__checkbox" for="checkbox-1"><span class="author-form__check-btn"></span> Сделал селфи с акулой</label>
+                    </div>
+                    <div class="author-form__wrapper">
+                      <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-2" checked>
+                      <label class="author-form__checkbox" for="checkbox-2"><span class="author-form__check-btn"></span>Обгорел на пляже</label>
+                    </div>
+                  </div> 
+                  <div class="author-form__wrapping">
+                    <div class="author-form__wrapper">
+                      <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-3">
+                      <label class="author-form__checkbox" for="checkbox-3"><span class="author-form__check-btn"></span>Видел Чака Норриса</label>
+                    </div>
+                    <div class="author-form__wrapper">
+                      <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-4">
+                      <label  class="author-form__checkbox" for="checkbox-4"><span class="author-form__check-btn"></span>Накупил сувениров</label>
+                    </div>
+                  </div>
+                  <div class="author-form__wrapping">
+                    <div class="author-form__wrapper">
+                      <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-5" checked>
+                      <label class="author-form__checkbox" for="checkbox-5"><span class="author-form__check-btn"></span>Удержал башню</label>
+                    </div>
+                    <div class="author-form__wrapper">
+                      <input class="author-form__check-input" type="checkbox" name="checkbox" id="checkbox-6">
+                      <label class="author-form__checkbox" for="checkbox-6"><span class="author-form__check-btn"></span>Разгромил отель</label>
+                    </div>
+                  </div>  
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="author-form__content-wrapper">
+            <fieldset class="author-form__item author-form__item--contacts">
+              <legend class="author-form__title-hidden">Контактная информация</legend>
+              <div class="author-form__wrapping-contacts">
+                <div class="author-form__stub">
+                  <label class="author-form__label" for="telephone">Номер телефона</label>
+                  <input class="author-form__input" type="tel" name="tel" id="telephone" placeholder="Номер, пожалуйста">
+                  <button class="author-form__button-contacts author-form__button-contacts--phone"></button>
+                </div>
+                <div class="author-form__stub">
+                  <label class="author-form__label" for="email">Адрес почты</label>
+                  <input class="author-form__input" type="email" name="email" id="email" required placeholder="Введите почту *">
+                  <button class="author-form__button-contacts author-form__button-contacts--email"></button>
+                </div>
+              </div>  
+            </fieldset>
         </div>
+          <div class="author-form__bg-container">
+            <div class="author-form__content-wrapper">
+              <fieldset class="author-form__item author-form__item--application">
+                <legend class="author-form__title">С каким приложением путешествовали?</legend>
+                <div class="author-form__wrapper">
+                  <input  class="author-form__radio-input" type="radio" name="radio" id="radio-1" checked>
+                  <label class="author-form__radio" for="radio-1"><span class="author-form__radio-btn"></span>Pink для iOS</label>
+                </div>
+                <div class="author-form__wrapper">
+                  <input class="author-form__radio-input" type="radio" name="radio" id="radio-2" >
+                  <label class="author-form__radio" for="radio-2"><span class="author-form__radio-btn"></span>Pink на Android</label>
+                </div>
+                <div class="author-form__wrapper">
+                  <input class="author-form__radio-input" type="radio" name="radio" id="radio-3">
+                  <label class="author-form__radio" for="radio-3"><span class="author-form__radio-btn"></span>Windows Phone</label>
+                </div>  
+              </fieldset>
+            </div>
+          </div>
+          <div class="author-form__content-wrapper">
+            <fieldset class="author-form__item author-form__item--emotions">
+              <legend class="author-form__title">Опишите свои эмоции</legend>
+              <textarea class="author-form__textarea" id="emotions" name="emotions" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea> 
+            </fieldset>
+          </div>
+          <div class="author-form__content-wrapper">
+            <div class="author-form__btn">
+              <button class="author-form__button" type="submit">Отправить форму</button>
+              <p class="author-form__text"><span class="author-form__star">*</span> — обязательные <span class="author-form__text-hidden">для заполнения</span>поля</p>  
+            </div>
+        </div>
+        </div>   
       </form>
     </main>
     <footer class="main-footer">
