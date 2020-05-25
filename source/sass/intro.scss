@@ -35,11 +35,17 @@
   background-size:  auto 286px, cover;
 }
 
+.intro__top.intro__top--inner,
+.intro__top.intro__top--inner-form {
+  background-image: none;
+  min-height: 170px;
+}
+
 .intro.intro--inner {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -54,7 +60,8 @@
   
   .intro.intro--inner {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center bottom;
+    background-position: center top;
+    background-size: auto;
     min-height: 440px;
     margin-bottom: 90px; 
   }
@@ -89,9 +96,10 @@
   }
 
   .intro__title--inner-form {
-    width: 760px;
+    width: 475px;
     margin: 0 auto;
     padding: 0;
+    font-size: 50px;
   }
 }
 
@@ -106,18 +114,19 @@
 
   .intro.intro--inner {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center bottom;
+    background-position: center top;
     min-height: 395px;
     margin-bottom: 90px;
+  }
+
+  .intro__title--inner-form {
+    width: 770px;
   }
 
   .intro__content-wrapper {
     padding-top: 219px;
   }
 
-  .intro__title {
-    font-size: 50px;
-  }
 
   .intro__title.intro__title--inner {
     width: 410px;
@@ -126,6 +135,7 @@
   .intro__content-wrapper--inner {
     padding-top: 170px;
   }
+
 
   
  

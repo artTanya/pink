@@ -11,8 +11,8 @@
 .popup {
   position: absolute;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20%;
+  transform: translateY(-20%);
   background-color: #ffffff;
   padding-top: 45px;
   padding-bottom: 40px;
@@ -21,8 +21,8 @@
 
 .popup--success {
   position: absolute;
-  top: 30%;
-  transform: translateY(-30%);
+  top: 70%;
+  transform: translateY(-70%);
 }
 
 .popup__button {
