@@ -197,6 +197,10 @@
     right: 29px;
   }
 
+  .photos__text-content {
+    display: inline;
+  }
+
   .photos__text-content,
   .photos__text-content-bottom {
     font-size: 18px;
@@ -211,11 +215,18 @@
   }
 
   .photos__like-button::before {
-    order:1;
+    order: 1;
   }
 
   .photos__panorama-banner {
     top: 57px;
+    right: 20px;
+  }
+
+  .photos__content-wrapper--narrow {
+    width: 560px;
+    text-align: center;
+    margin-bottom: 76px;
   }
 }
 
@@ -254,5 +265,13 @@
 
   .photos__panorama-banner {
     top: 55px;
+    right: 130px;
+  }
+
+  .photos__text-content {
+    display: block;
+  }
+  .photos__content-wrapper--narrow {
+    width: initial;
   }
 }

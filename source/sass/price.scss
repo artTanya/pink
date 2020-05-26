@@ -149,11 +149,17 @@
     padding-bottom: 68px;
     margin-bottom: 45px;
   }
+  
+  .price__list {
+    margin: 0;
+  }
 
   .price__title {
+    width: 157px;
     font-size: 16px;
     padding-top: 12px;
     padding-bottom: 7px;
+    box-sizing: border-box;
   }
 
   .price__title:first-child {
@@ -204,10 +210,14 @@
   }
 
   .price__field {
+    width:157px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
     box-sizing: border-box;
     text-transform: none;
+    box-sizing: border-box;
   }
 
   .price__field:first-child {
