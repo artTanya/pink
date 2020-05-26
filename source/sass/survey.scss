@@ -1,16 +1,27 @@
 
 .survey__title {
+  width: 170px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .survey__link {
   color: #d22856;
+  text-decoration: none;
+  border-bottom: 1px solid #d22856;
 }
 
 .survey__content-wrapper {
   @include content-wrapper;
+}
+
+.survey__icon svg {
+  fill: #dedede;
+  width: 238px;
+  height: 276px;
 }
 
 @media (max-width: $max-mobile-width) {
@@ -20,7 +31,129 @@
 }
 
 @media (min-width: $tablet-width) {
+  .survey {
+    padding-top: 59px;
+    margin-bottom: 90px;
+  }
+
   .survey__content-wrapper {
     display: flex;
+  }
+
+  .survey__text {
+    width: 300px;
+    padding-right: 15px;
+    padding-top: 40px;
+  }
+
+  .survey__about {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .survey__icon {
+    position: relative;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
+    margin-right: 75px;
+  }
+
+  .survey__icon::before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 53px;
+    right: 17px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .survey__icon::after {
+    content: "24";
+    color: #d22856;
+    font-size: 96px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 120px;
+    transform: translate(-50%);
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .survey {
+    background-color: #f2f2f2;
+    padding-bottom: 60px;
+    padding-top: 33px;
+    margin: 0;
+  }
+
+  .survey__about,
+  .survey__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .survey__title {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .survey__about {
+    width: 525px;
+    margin-bottom: 30px;
+  }
+
+  .survey__text {
+    padding-top: 90px;
+    width: 525px;
+  }
+
+  .survey__icon {
+    margin-right: 67px;
+  }
+
+  .survey__icon svg {
+    fill: #dedede;
+    width: 298px;
+    height: 345px;
+  }
+
+  .survey__icon {
+    position: relative;
+    background-image: url("../img/icon-timer.svg");
+    width: 298px;
+    height: 345px;
+    margin-right: 65px;
+  }
+
+  .survey__icon::before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 23px;
+    width: 253px;
+    height: 253px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+  }
+  
+  .survey__icon::after {
+    content: "24";
+    color: #d22856;
+    font-size: 120px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 145px;
+    transform: translate(-50%);
   }
 }

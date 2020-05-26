@@ -1,5 +1,7 @@
+@import "fonts";
 @import "variables";
 @import "mixins";
+@import "global";
 @import "main-header";
 @import "main-nav";
 @import "intro";
@@ -10,18 +12,13 @@
 @import "contacts";
 @import "main-footer";
 @import "photos";
-@import "tools";
+@import "upload-form";
 @import "author-form";
 @import "survey";
 @import "copyright";
 @import "social";
 @import "site-list";
-
-body {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #000000;
-  margin: 0;
-}
+@import "button";
+@import "slider";
+@import "interactive-map";
+@import "popup";

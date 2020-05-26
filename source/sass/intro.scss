@@ -1,12 +1,23 @@
 .intro__content-wrapper {
+  padding-top: 89px;
+
   @include content-wrapper;
 }
 
 .intro {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  min-height: 462px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: -66px;
+  margin-bottom: 40px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }  
 }
+
 
 .intro__title {
   color: #ffffff;
@@ -14,6 +25,7 @@
   line-height: 1.2;
   font-weight: 300;
   margin: 0;
+  text-align: center;
 }
 
 .intro__download {
@@ -21,25 +33,141 @@
 }
 
 .intro__top {
-  min-height: 396px;
+  min-height: 462px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom;
+  background-size:  auto 286px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }  
+}
+
+.intro__top.intro__top--inner,
+.intro__top.intro__top--inner-form {
+  background-image: none;
+  min-height: 170px;
+}
+
+.intro.intro--inner {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center 0;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 300;
+  background-position: center top;
+  background-size: 100%;
+  min-height: 238px;
+  margin-bottom: 45px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }  
 }
 
 @media (min-width: $tablet-width) {
-  .intro__top {
-    min-height: 266px;
+  .intro {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    min-height: 545px;
+    margin-top: -110px;
+    background-position: center bottom, center bottom;
+    background-size: auto 545px, auto;
+    margin-bottom: 50px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
+
+  }
+  
+  .intro.intro--inner {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center top;
+    background-size: auto;
+    min-height: 440px;
+    margin-bottom: 90px; 
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    } 
+  }
+
+  .intro__top {
+    background-image: none;
+    min-height: 378px;
+  }
+
+  .intro__content-wrapper {
+    padding-top: 204px;
+  }
+  
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 1.2;
+    padding: 0 30px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .intro__title.intro__title--inner {
+    width: 348px;
+    margin: 0 auto;
+    font-size: 50px;
+    padding: 0; 
+  }
+
+  .intro__content-wrapper--inner {
+    padding-top: 180px;
+  }
+
+  .intro__title--inner-form {
+    width: 475px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .intro__top {
+  .intro {
+    background-image:url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    min-height: 853px;
+    background-position: center bottom, center bottom;
+    background-size: auto 645px, auto;
+    margin-bottom: 68px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    } 
+  }
+
+  .intro.intro--inner {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    min-height: 395px;
+    margin-bottom: 90px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1338px auto;
+    } 
+    
+  }
+
+  .intro__title--inner-form {
+    width: 770px;
+  }
+
+  .intro__content-wrapper {
+    padding-top: 219px;
+  }
+
+
+  .intro__title.intro__title--inner {
+    width: 410px;
+  }
+
+  .intro__content-wrapper--inner {
+    padding-top: 170px;
+  }
+
+  .intro__title {
+    font-size: 50px;
   }
 }

@@ -1,0 +1,48 @@
+.interactive-map__iframe {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+}
+.interactive-map {
+  position: relative;
+}
+
+.interactive-map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+}
+
+.interactive-map__iframe::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 39px;
+  height: 39px;
+  top: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-map-marker.svg");
+}
+
+@media (min-width: $tablet-width) {
+    .interactive-map__iframe {
+      min-height: 375px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    .interactive-map__iframe {
+      min-height: 502px;
+      margin-bottom: 70px;
+    }
+
+}

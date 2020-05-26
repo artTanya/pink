@@ -1,9 +1,24 @@
+
 .main-footer__content-wrapper {
   @include content-wrapper;
 }
 
 .main-footer--closed {
   display: none;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.main-footer__logo svg:hover {
+  fill: #d22856;
+}
+
+.main-footer__logo svg:active {
+  fill: #d22856;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,5 +29,11 @@
 
   .main-footer--closed {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__social {
+    margin-right:-33px;
   }
 }

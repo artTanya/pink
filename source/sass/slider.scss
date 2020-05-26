@@ -1,0 +1,61 @@
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  background-color: #bec3c7;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.slider__toggle:hover {
+  background-color: #7e868f;
+}
+
+.slider__toggle:active {
+  background-color: #e9ebec;
+}
+
+.slider__toggle--active {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__toggle-arrow {
+  display: block;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 50px;
+  position: absolute;
+}
+
+.slider__toggle-arrow svg {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.slider__toggle-arrow svg:hover {
+  fill: rgba(40, 54, 69, 0.6);
+}
+
+.slider__toggle-arrow svg:active {
+  fill: rgba(40, 54, 69, 0.1);
+}
+
+.slider__toggle-arrow--left {
+  left: 5px;
+  top: 25px;
+}
+
+ .slider__toggle-arrow--right {
+   right: 5px;
+   top: 25px;
+}
