@@ -31,11 +31,11 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  background-color: transparent;;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  padding:0;
+  padding: 0;
 }
 
 .upload-form__range {
@@ -58,12 +58,13 @@
     transform: translateX(-50%);
     bottom: 28px;
   }
-  
+
   .upload-form__item svg {
-    fill: rgba(40,54,69,0.3);
+    fill: rgba(40, 54, 69, 0.3);
   }
+
   .upload-form__item svg:hover {
-    fill: rgba(40,54,69,0.5);
+    fill: rgba(40, 54, 69, 0.5);
   }
 
   .upload-form__item--active svg {
@@ -104,7 +105,7 @@
   width: 14px;
   height: 14px;
   background-color: #f2f2f2;
- 
+
   padding: 0;
   border: 2px solid #d22856;
   border-radius: 50%;
@@ -125,8 +126,8 @@
 }
 
 .upload-form__button:hover {
-  color: #ffffff; 
-  background-color: #d22856; 
+  color: #ffffff;
+  background-color: #d22856;
 }
 
 .upload-form__button:active {
@@ -135,20 +136,20 @@
 
 
 .upload-form__button--grey {
-  border: 3px solid rgba(40,54,69,0.1);
-  color: rgba(40,54,69,0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
 }
 
 .upload-form__button--grey:hover {
-  border: 3px solid rgba(40,54,69,0.3);
+  border: 3px solid rgba(40, 54, 69, 0.3);
   background-color: transparent;
-  color: rgba(40,54,69,0.3);
+  color: rgba(40, 54, 69, 0.3);
 }
 
 .upload-form__button--grey:active {
   border: 3px solid transparent;
-  background-color:rgba(40,54,69,0.3);
-  color: rgba(255,255,255, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .upload-form__button.upload-form__button--grey {
@@ -159,7 +160,7 @@
   .upload-form {
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 35px;;
+    margin-bottom: 35px;
   }
 
   .upload-form__content-wrapper {
@@ -181,7 +182,7 @@
 
   .upload-form__list {
     padding: 0;
-    margin-top:-17px;
+    margin-top: -17px;
     display: block;
   }
 
@@ -202,7 +203,7 @@
 
   .upload-form__btn {
     width: 25px;
-    height:25px;
+    height: 25px;
     margin-right: 29px;
   }
 
@@ -275,8 +276,8 @@
 
   .upload-form__list {
     margin-top: -15px;
-    flex-direction: column;  
-  } 
+    flex-direction: column;
+  }
 
   .upload-form__btn {
     width: 48px;

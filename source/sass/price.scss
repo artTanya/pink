@@ -61,7 +61,7 @@
 }
 
 .price__field--pink-filter::before {
-  content:"Розовый фильтр";
+  content: "Розовый фильтр";
 }
 
 .price__field--smiles::before {
@@ -74,6 +74,7 @@
 
 .price__toggles {
   text-align: center;
+  margin: 0;
 }
 
 .price__title--hit {
@@ -81,20 +82,20 @@
 }
 
 .price__title--hit::after {
-  content:"хит";
+  content: "хит";
   position: absolute;
   top: 7px;
   left: 8px;
   display: block;
   transform: rotate(-45deg);
   font-size: 14px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-.price__title--hit::before { 
+.price__title--hit::before {
   content: "";
   display: block;
   width: 61px;
@@ -115,10 +116,6 @@
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 230px center;
-}
-
-.price__toggles {
-  margin: 0;
 }
 
 @media (max-width: $max-mobile-width) {
@@ -149,7 +146,7 @@
     padding-bottom: 68px;
     margin-bottom: 45px;
   }
-  
+
   .price__list {
     margin: 0;
   }
@@ -175,18 +172,18 @@
   }
 
   .price__title--hit::after {
-    content:"хит";
+    content: "хит";
     position: absolute;
     top: 8px;
     left: 8px;
     display: block;
     transform: rotate(-45deg);
-    font-size: 14x;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
   }
 
-  .price__title--hit::before { 
+  .price__title--hit::before {
     content: "";
     display: block;
     width: 61px;
@@ -203,21 +200,20 @@
   .price__value {
     text-transform: none;
     font-size: 18px;
-  } 
+  }
 
   .price__toggles {
     display: none;
   }
 
   .price__field {
-    width:157px;
+    width: 157px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 17px;
     padding-right: 17px;
     box-sizing: border-box;
     text-transform: none;
-    box-sizing: border-box;
   }
 
   .price__field:first-child {
@@ -243,11 +239,11 @@
   .price__field--pink-filter::before {
     display: none;
   }
-  
+
   .price__field--smiles::before {
     display: none;
   }
-  
+
   .price__field--comments::before {
     display: none;
   }
@@ -261,15 +257,15 @@
   }
 
   .price__field {
-     width: 238px;
-     font-size: 18px;
-     padding-left: 21px;
-     padding-right: 21px;
-     padding-top: 15px;
-     padding-bottom: 15px;
+    width: 238px;
+    font-size: 18px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
-  .price__value{
+  .price__value {
     font-size: 24px;
   }
 
@@ -280,15 +276,14 @@
   }
 
   .price__title--hit::after {
-    content:"хит";
+    content: "хит";
     position: absolute;
     top: 14px;
     left: 13px;
-   
   }
 
   .price__title--hit::before {
-    content:"";
+    content: "";
     display: block;
     width: 74px;
     height: 73px;

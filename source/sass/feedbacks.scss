@@ -52,7 +52,7 @@
     padding: 0;
     padding-bottom: 25px;
   }
-  
+
   .feedbacks__item {
     display: flex;
     flex-direction: column;
@@ -77,11 +77,11 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .feedbacks {
     padding-top: 190px;
     padding-bottom: 50px;
   }
+
   .feedbacks__text {
     padding: 0 105px;
   }

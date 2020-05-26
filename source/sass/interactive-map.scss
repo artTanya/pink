@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 200px;
 }
+
 .interactive-map {
   position: relative;
 }
@@ -33,16 +34,15 @@
 }
 
 @media (min-width: $tablet-width) {
-    .interactive-map__iframe {
-      min-height: 375px;
-      margin-bottom: 35px;
-    }
+  .interactive-map__iframe {
+    min-height: 375px;
+    margin-bottom: 35px;
   }
-  
-  @media (min-width: $desktop-width) {
-    .interactive-map__iframe {
-      min-height: 502px;
-      margin-bottom: 70px;
-    }
+}
 
+@media (min-width: $desktop-width) {
+  .interactive-map__iframe {
+    min-height: 502px;
+    margin-bottom: 70px;
+  }
 }

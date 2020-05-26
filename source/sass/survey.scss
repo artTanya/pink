@@ -62,7 +62,7 @@
   }
 
   .survey__icon::before {
-    content:"";
+    content: "";
     display: block;
     position: absolute;
     top: 53px;
@@ -73,7 +73,7 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-  
+
   .survey__icon::after {
     content: "24";
     color: #d22856;
@@ -117,10 +117,6 @@
     width: 525px;
   }
 
-  .survey__icon {
-    margin-right: 67px;
-  }
-
   .survey__icon svg {
     fill: #dedede;
     width: 298px;
@@ -136,7 +132,7 @@
   }
 
   .survey__icon::before {
-    content:"";
+    content: "";
     display: block;
     position: absolute;
     top: 70px;
@@ -145,7 +141,7 @@
     height: 253px;
     background-image: url("../img/icon-editor-diagram-fill.svg");
   }
-  
+
   .survey__icon::after {
     content: "24";
     color: #d22856;
