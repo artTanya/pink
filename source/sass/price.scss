@@ -84,10 +84,10 @@
   content:"хит";
   position: absolute;
   top: 7px;
-  left: 13px;
+  left: 8px;
   display: block;
   transform: rotate(-45deg);
-  font-size: 10px;
+  font-size: 14px;
   font-family: "Open Sans";
   line-height: 21px;
   text-transform: uppercase;
@@ -171,11 +171,11 @@
   .price__title--hit::after {
     content:"хит";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     display: block;
     transform: rotate(-45deg);
-    font-size: 10px;
+    font-size: 14x;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -204,7 +204,6 @@
   }
 
   .price__field {
-    // width: 156px;
     padding-top: 8px;
     padding-bottom: 8px;
     box-sizing: border-box;
@@ -273,8 +272,8 @@
   .price__title--hit::after {
     content:"хит";
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 14px;
+    left: 13px;
    
   }
 

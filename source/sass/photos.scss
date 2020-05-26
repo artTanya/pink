@@ -135,13 +135,13 @@
 
 
 @media (max-width: $max-mobile-width) {
-   .photos__item:last-child {
-     margin: 0;
-   }
+  .photos__item:last-child {
+    margin: 0;
+  }
 
-   .photos__item.photos__item.photos__item--wide {
-     margin-bottom: 20px;
-   }
+  .photos__item.photos__item.photos__item--wide {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -200,6 +200,10 @@
   .photos__text-content,
   .photos__text-content-bottom {
     font-size: 18px;
+  }
+
+  .photos__text-content:nth-child(2) {
+    margin-bottom: 80px;
   }
 
   .photos__text-content-bottom:nth-child(2) {
