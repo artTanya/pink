@@ -33,7 +33,7 @@
 @media (min-width: $tablet-width) {
   .survey {
     padding-top: 59px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
 
   .survey__content-wrapper {
@@ -47,6 +47,7 @@
   }
 
   .survey__about {
+    width: 300px;
     margin: 0;
     margin-bottom: 8px;
   }

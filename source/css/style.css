@@ -477,7 +477,8 @@ body {
   padding-bottom: 330px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: center bottom;
+  padding-top: 20px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantages__content {
       background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -535,7 +536,8 @@ body {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left top;
-    min-height: 480px; } }
+    min-height: 480px;
+    margin-top: -47px; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .advantages__content {
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -626,6 +628,12 @@ body {
   background-color: #ffffff;
   text-align: center;
   padding-top: 40px; }
+
+.feedbacks::before {
+  background-image: url("/img/bg-triangle-white.svg");
+  width: 100%;
+  height: 40px;
+  top: -30px; }
 
 .feedbacks__content-wrapper {
   position: relative;
@@ -853,6 +861,7 @@ body {
   .price__content-wrapper {
     width: initial;
     padding: 0;
+    padding-top: 100px;
     margin: 0; }
   .price__list {
     width: 840px;
@@ -863,7 +872,7 @@ body {
 
 @media (min-width: 660px) {
   .price {
-    padding-top: 130px;
+    padding-top: 82px;
     padding-bottom: 68px;
     margin-bottom: 45px; }
   .price__list {
@@ -1846,7 +1855,7 @@ body {
   margin-right: 30px; }
 
 .author-form__check-input:checked + .author-form__checkbox .author-form__check-btn {
-  background-image: url("../img/checkbox.svg");
+  background-image: url("../img/icon-checkbox.svg");
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -2038,7 +2047,6 @@ body {
 
 @media (min-width: 960px) {
   .author-form {
-    margin-bottom: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2101,7 +2109,8 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-bottom: 70px; }
   .author-form__text-content {
     padding-left: 90px;
     padding-right: 90px; }
@@ -2169,7 +2178,7 @@ body {
 @media (min-width: 660px) {
   .survey {
     padding-top: 59px;
-    margin-bottom: 90px; }
+    margin-bottom: 100px; }
   .survey__content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2179,6 +2188,7 @@ body {
     padding-right: 15px;
     padding-top: 40px; }
   .survey__about {
+    width: 300px;
     margin: 0;
     margin-bottom: 8px; }
   .survey__icon {
@@ -2500,16 +2510,8 @@ body {
     min-height: 502px;
     margin-bottom: 70px; } }
 
-.overlay {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
 .popup {
+  display: none;
   position: absolute;
   width: 100%;
   top: 20%;
@@ -2621,5 +2623,16 @@ body {
             justify-content: center;
     background-color: #f2f2f2;
     min-height: 164px; } }
+
+.overlay {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

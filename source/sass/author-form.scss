@@ -205,7 +205,7 @@
 }
 
 .author-form__check-input:checked + .author-form__checkbox .author-form__check-btn {
-  background-image: url("../img/checkbox.svg");
+  background-image: url("../img/icon-checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -433,7 +433,6 @@
 
 @media (min-width: $desktop-width) {
   .author-form {
-    margin-bottom: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -488,6 +487,7 @@
   .author-form__btn {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 
   .author-form__text-content {

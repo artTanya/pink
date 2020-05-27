@@ -12,6 +12,7 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  padding-top: 20px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -80,6 +81,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     min-height: 480px;
+    margin-top: -47px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@1x.png");

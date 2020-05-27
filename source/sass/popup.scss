@@ -1,14 +1,6 @@
-.overlay {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 .popup {
+  display: none;
   position: absolute;
   width: 100%;
   top: 20%;
