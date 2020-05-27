@@ -62,7 +62,7 @@
 
 .main-header__burger:active::before {
   background-color: rgba(210,40,86, 0.3);
-  box-shadow: 0 10px 0 0 rgba(210,40,86,0.3), 0 20px 0 0 rgba(210,40,86, 0.3);
+  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
 }
 
 .main-header__burger--closed {
@@ -97,22 +97,21 @@
 .main-header__burger--closed:active::before {
   transform: rotate(45deg);
   box-shadow: none;
-  background-color: rgba(210,40,86,0.3);
+  background-color: rgba(210, 40, 86, 0.3);
 }
-
-
 
 .main-header__burger--closed::after {
   transform: rotate(-45deg);
 }
+
 .main-header__burger--closed:hover::after {
   transform: rotate(-45deg);
   background-color: #d22856;
 }
+
 .main-header__burger--closed:active::after {
   transform: rotate(-45deg);
-  background-color: rgba(210,40,86,0.3);
-  
+  background-color: rgba(210, 40, 86, 0.3);
 }
 
 .main-header__burger--hidden {
