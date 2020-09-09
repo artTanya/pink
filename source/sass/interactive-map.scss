@@ -36,13 +36,11 @@
 @media (min-width: $tablet-width) {
   .interactive-map__iframe {
     min-height: 375px;
-    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interactive-map__iframe {
     min-height: 502px;
-    margin-bottom: 70px;
   }
 }

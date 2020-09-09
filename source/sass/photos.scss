@@ -1,6 +1,6 @@
 .photos__block {
-  padding-left: 15px;
-  padding-right: 13px;
+  padding-left: 17px;
+  padding-right: 10px;
   padding-top: 19px;
   padding-bottom: 19px;
   margin: 0;
@@ -12,9 +12,10 @@
 }
 
 .photos__panorama {
-  width: 100%;
-  height: auto;
-  display: block;
+  display: flex;
+  align-items: stretch;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .photos__author-picture:first-child {
@@ -27,9 +28,11 @@
   justify-content: center;
   position: absolute;
   top: 0;
-  right: 13px;
+  right: 19px;
   padding-top: 6px;
+  padding-right: 6px;
   padding-bottom: 6px;
+  padding-left: 6px;
   width: 140px;
   color: #ffffff;
   font-size: 12px;
@@ -37,6 +40,7 @@
   line-height: 24px;
   text-transform: uppercase;
   background-color: #d22856;
+  box-sizing: border-box;
 }
 
 .photos__text-content,

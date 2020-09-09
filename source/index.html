@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="fonts">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header main-header--dense">
@@ -67,7 +68,7 @@
               </li>
               <li class="advantages__item advantages__item--world">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="advantages__break"> усилить эффект</p>
               </li>
               <li class="advantages__item advantages__item--friends">
                 <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -81,8 +82,8 @@
         <div class="survey__content-wrapper">
           <div class="survey__icon"></div>
           <div class="survey__text">
-            <h2 class="survey__title">Эффект на 24 часа!</h2>
-            <p class="survey__about">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <h2 class="survey__title">Эффект<br class="survey__break-second"> на 24 часа!</h2>
+            <p class="survey__about">Британские ученые провели исследования и доказали,<br class="survey__break"> что положительный эффект <br class="survey__break-second"> от использования приложения длится целые сутки!</p>
             <a class="survey__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -156,16 +157,16 @@
           <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
           <div class="contacts__list">
             <div class="contacts__item">
-              <p class="contacts__text">Звоните:</p>
-              <p class="contacts__value">+7 (812) 555-66-66</p>
+              <p class="contacts__text contacts__text--first">Звоните:</p>
+              <p class="contacts__value contacts__value--phone">+7 (812) 555-66-66</p>
             </div>
             <div class="contacts__item">
-              <p class="contacts__text">Пишите:</p>
-              <p class="contacts__value">mail@htmlacademy.ru</p>
+              <p class="contacts__text contacts__text--second">Пишите:</p>
+              <p class="contacts__value contacts__value--email">mail@htmlacademy.ru</p>
             </div>
             <div class="contacts__item">
-              <p class="contacts__text">Приезжайте в гости:</p>
-              <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__text contacts__text--third">Приезжайте в гости:</p>
+              <p class="contacts__value contacts__value--address">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
         </div>

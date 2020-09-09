@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 95px;
+  height: 21px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -90,7 +90,7 @@
   display: block;
   transform: rotate(-45deg);
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 21px;
   text-transform: uppercase;
   font-weight: 400;
@@ -127,7 +127,7 @@
   .price__content-wrapper {
     width: initial;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 90px;
     margin: 0;
   }
 
@@ -249,13 +249,21 @@
   .price__field--comments::before {
     display: none;
   }
+
+  .price::before {
+    height: 45px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .price {
-    padding-top: 160px;
+    padding-top: 142px;
     padding-bottom: 95px;
     margin-bottom: 63px;
+  }
+
+  .price::before {
+    height: 65px;
   }
 
   .price__field {

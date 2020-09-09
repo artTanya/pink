@@ -1,3 +1,6 @@
+.main-footer {
+  padding-top: 53px;
+}
 
 .main-footer__content-wrapper {
   @include content-wrapper;
@@ -26,6 +29,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .main-footer {
+    padding-top: 35px;
+  }
 
   .main-footer--closed {
     display: block;
@@ -33,7 +39,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-footer {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
   .main-footer__social {
-    margin-right: -33px;
+    margin-right: -20px;
   }
 }

@@ -47,7 +47,7 @@
   }
 
   .survey__about {
-    width: 300px;
+    width: 305px;
     margin: 0;
     margin-bottom: 8px;
   }
@@ -66,9 +66,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 53px;
-    right: 17px;
-    width: 200px;
+    top: 57px;
+    right: 8px;
+    width: 205px;
     height: 200px;
     background-image: url("../img/icon-editor-diagram-fill.svg");
     background-size: contain;
@@ -82,8 +82,11 @@
     font-weight: 700;
     position: absolute;
     left: 50%;
-    bottom: 120px;
+    bottom: 112px;
     transform: translate(-50%);
+  }
+  .survey__break {
+    display: none;
   }
 }
 
@@ -109,7 +112,7 @@
   }
 
   .survey__about {
-    width: 525px;
+    width: 528px;
     margin-bottom: 30px;
   }
 
@@ -152,5 +155,12 @@
     left: 50%;
     bottom: 145px;
     transform: translate(-50%);
+  }
+
+  .survey__break {
+    display: block;
+  }
+  .survey__break-second {
+    display: none;
   }
 }
