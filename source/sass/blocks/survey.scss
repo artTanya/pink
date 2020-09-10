@@ -66,10 +66,10 @@
     content: "";
     display: block;
     position: absolute;
-    top: 57px;
-    right: 8px;
-    width: 205px;
-    height: 200px;
+    top: 50px;
+    right: 14px;
+    width: 202px;
+    height: 202px;
     background-image: url("../img/icon-editor-diagram-fill.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -85,6 +85,7 @@
     bottom: 112px;
     transform: translate(-50%);
   }
+
   .survey__break {
     display: none;
   }
@@ -160,6 +161,7 @@
   .survey__break {
     display: block;
   }
+
   .survey__break-second {
     display: none;
   }

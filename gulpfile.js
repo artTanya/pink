@@ -7,7 +7,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var csso = require("gulp-csso"); 
+var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -36,7 +36,7 @@ gulp.task("server", function () {
     server: "build/",
     notify: false,
     open: true,
-    cors: true, 
+    cors: true,
     ui: false
   });
 
@@ -72,8 +72,8 @@ gulp.task("sprite", function () {
   return gulp.src("build/img/icon-*.svg")
   .pipe(svgstore({
     inlineSvg: true
-  }))  
-  .pipe(rename("sprite.svg")) 
+  }))
+  .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"));
 });
 
@@ -81,7 +81,7 @@ gulp.task("html", function () {
   return gulp.src("source/*.html")
   .pipe(posthtml([
     include()
-  ]))  
+  ]))
   .pipe(gulp.dest("build"));
 });
 
