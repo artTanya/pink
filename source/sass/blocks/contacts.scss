@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 0;
+  }
+
   .contacts__item:nth-child(2) {
     order: 1;
   }
@@ -119,11 +123,13 @@
   }
 
   .contacts__text.contacts__text--first {
+    margin-left: 0;
     margin-right: 10px;
   }
 
   .contacts__text.contacts__text--second {
     margin-left: 9px;
+    margin-right: 0;
   }
 
   .contacts__value.contacts__value--address {
@@ -131,6 +137,7 @@
   }
 
   .contacts__value.contacts__value--phone {
+    margin-left: 0;
     margin-right: 10px;
   }
 
