@@ -118,6 +118,7 @@
 
 .upload-form__button {
   width: 100%;
+  font-family: "Open Sans","Arial",sans-serif;
   border: 3px solid #d22856;
   background-color: #f2f3f3;
   color: #d22856;
@@ -180,7 +181,7 @@
 
   .upload-form__list {
     padding: 0;
-    margin-top: -17px;
+    margin-top: -12px;
     display: block;
   }
 
@@ -188,7 +189,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #dedfe1;
-    min-height: 73px;
+    min-height: 70px;
   }
 
   .upload-form__range {
@@ -203,6 +204,10 @@
     width: 25px;
     height: 25px;
     margin-right: 29px;
+  }
+
+  .upload-form__button {
+    font-family: "Open Sans","Arial",sans-serif;
   }
 
   .upload-form__handle--crop {
@@ -273,14 +278,14 @@
   }
 
   .upload-form__list {
-    margin-top: -15px;
+    margin-top: -12px;
     flex-direction: column;
   }
 
   .upload-form__btn {
     width: 48px;
     height: 43px;
-    margin-right: 49px;
+    margin-right: 45px;
   }
 
   .upload-form__buttons {
@@ -291,6 +296,7 @@
   .upload-form__button {
     width: 183px;
     margin: 0;
+    font-family: "Open Sans","Arial",sans-serif;
   }
 
   .upload-form__btn--crop svg {

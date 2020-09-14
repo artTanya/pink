@@ -15,7 +15,6 @@
   display: flex;
   align-items: stretch;
   min-width: 100%;
-  min-height: 100%;
 }
 
 .photos__author-picture:first-child {
@@ -221,6 +220,13 @@
     order: 1;
   }
 
+  .photos__panorama {
+    width: 100%;
+    min-height: 509px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
   .photos__panorama-banner {
     top: 57px;
     right: 20px;
@@ -268,9 +274,14 @@
     margin-bottom: 90px;
   }
 
+  .photos__panorama {
+    width: 100%;
+    min-height: 506px;
+  }
+
   .photos__panorama-banner {
     top: 55px;
-    right: 130px;
+    right: 8px;
   }
 
   .photos__content-wrapper--narrow {

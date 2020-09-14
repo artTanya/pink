@@ -54,7 +54,7 @@
     content: "";
     position: absolute;
     top: 0;
-    width: 100%;
+    width: auto;
     height: 40px;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@
 
 @media (min-width: $desktop-width) {
   .feedbacks {
-    padding-top: 190px;
+    padding-top: 186px;
     padding-bottom: 25px;
   }
 

@@ -51,7 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   .contacts__list {
@@ -76,6 +76,10 @@
 
   .contacts__value.contacts__value--address {
     width: 212px;
+  }
+
+  .contacts-text {
+    margin-bottom: 7px;
   }
 
   .contacts__text.contacts__text--first {
